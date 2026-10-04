@@ -1,5 +1,5 @@
 {{ shebang::luajit }}
--- https://github.com/Zeronetsec/Ares
+-- https://github.com/Senzdetta/Ares
 
 local lib_dir = os.getenv("__lib__") or "."
 package.path = lib_dir .. "/?.lua;" ..
@@ -217,4 +217,4 @@ end
 
 setprompt.setprompt(table.concat(out, ""))
 
--- Copyright (c) 2026 Zeronetsec
+-- Copyright (c) 2026 Senzdetta

@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef PARSE_MODES_H
 #define PARSE_MODES_H
@@ -81,4 +81,4 @@ static inline bool parse_modes(
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

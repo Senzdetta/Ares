@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef TRIM_WHITESPACE_H
 #define TRIM_WHITESPACE_H
@@ -31,4 +31,4 @@ static inline char *trim_whitespace(char *str) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

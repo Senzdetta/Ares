@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 package main
 
@@ -36,4 +36,4 @@ func similarityScore(input, cmd string) float64 {
     return score
 }
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef APPLY_CURSOR_STYLE_H
 #define APPLY_CURSOR_STYLE_H
@@ -25,4 +25,4 @@ static inline int apply_cursor_style(const char *style_name) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

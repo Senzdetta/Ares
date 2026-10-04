@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef SEARCH_PATH_H
 #define SEARCH_PATH_H
@@ -107,4 +107,4 @@ static inline char *search_path(
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

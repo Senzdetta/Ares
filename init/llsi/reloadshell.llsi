@@ -1,4 +1,4 @@
-# https://github.com/Zeronetsec/Ares
+# https://github.com/Senzdetta/Ares
 
 function reloadshell() {
     exec ares --shell
@@ -6,4 +6,4 @@ function reloadshell() {
 readonly -f reloadshell
 export -f reloadshell
 
-# Copyright (c) 2026 Zeronetsec
+# Copyright (c) 2026 Senzdetta

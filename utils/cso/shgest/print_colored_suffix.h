@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef PRINT_COLORED_SUFFIX_H
 #define PRINT_COLORED_SUFFIX_H
@@ -47,4 +47,4 @@ static inline void print_colored_suffix(const char *suffix) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 package main
 
@@ -11,4 +11,4 @@ func (m model) Init() tea.Cmd {
     return textinput.Blink
 }
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

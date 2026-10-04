@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef STRIP_SLASHES_H
 #define STRIP_SLASHES_H
@@ -16,4 +16,4 @@ static inline char *strip_slashes(char *str) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

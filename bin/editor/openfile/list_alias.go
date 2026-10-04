@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 package main
 
@@ -7,7 +7,7 @@ import (
     "fmt"
     "bufio"
     "strings"
-    "github.com/Zeronetsec/Ares/lib/std/go/color"
+    "github.com/Senzdetta/Ares/lib/std/go/color"
 )
 
 func listAlias(configPath string) {
@@ -65,4 +65,4 @@ func listAlias(configPath string) {
     }
 }
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

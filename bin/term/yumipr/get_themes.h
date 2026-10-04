@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef GET_THEMES_H
 #define GET_THEMES_H
@@ -30,4 +30,4 @@ static inline void get_themes(char *out_path, size_t size) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

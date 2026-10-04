@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef IS_EXCLUDED_H
 #define IS_EXCLUDED_H
@@ -60,4 +60,4 @@ static inline int is_excluded(
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef COMPARE_STRINGS_H
 #define COMPARE_STRINGS_H
@@ -18,4 +18,4 @@ static inline int compare_strings(
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

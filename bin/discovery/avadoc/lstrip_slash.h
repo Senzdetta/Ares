@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef LSTRIP_SLASH_H
 #define LSTRIP_SLASH_H
@@ -16,4 +16,4 @@ static inline char *lstrip_slash(char *str) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

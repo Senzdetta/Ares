@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef module_version_h
 #define module_version_h
@@ -16,8 +16,8 @@ static inline void version_execute(int argc, char **argv) {
 
     const char *name = "Ares";
     const char *version = "v0.1.04102026";
-    const char *creator = "Zeronetsec";
-    const char *homepage = "https://github.com/Zeronetsec/Ares";
+    const char *creator = "Senzdetta";
+    const char *homepage = "https://github.com/Senzdetta/Ares";
 
     printf(
         "%sName: %s%s%s\n",
@@ -47,4 +47,4 @@ static const Command cmd_version = {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

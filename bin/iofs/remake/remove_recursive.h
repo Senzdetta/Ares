@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef REMOVE_RECURSIVE_H
 #define REMOVE_RECURSIVE_H
@@ -22,4 +22,4 @@ static inline int remove_recursive(const char *path) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

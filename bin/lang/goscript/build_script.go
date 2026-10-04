@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 package main
 
@@ -10,7 +10,7 @@ import (
     "crypto/md5"
     "os/exec"
     "path/filepath"
-    "github.com/Zeronetsec/Ares/lib/std/go/color"
+    "github.com/Senzdetta/Ares/lib/std/go/color"
 )
 
 func buildScript(cfg Config) string {
@@ -226,4 +226,4 @@ func buildScript(cfg Config) string {
     return binaryCache
 }
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

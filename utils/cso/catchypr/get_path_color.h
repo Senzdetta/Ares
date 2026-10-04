@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef GET_PATH_COLOR_H
 #define GET_PATH_COLOR_H
@@ -26,4 +26,4 @@ static inline const char* get_path_color(const char *pwd) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

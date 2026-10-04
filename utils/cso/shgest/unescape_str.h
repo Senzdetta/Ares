@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef UNESCAPE_STR_H
 #define UNESCAPE_STR_H
@@ -34,4 +34,4 @@ static inline void unescape_str(
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

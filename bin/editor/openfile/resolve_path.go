@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 package main
 
@@ -36,4 +36,4 @@ func resolvePath(target string, configPath string) string {
     return expandPath(target)
 }
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef LOADSO_BUILTIN_H
 #define LOADSO_BUILTIN_H
@@ -107,4 +107,4 @@ static inline int loadso_builtin(WORD_LIST *list) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

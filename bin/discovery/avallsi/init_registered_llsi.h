@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef INIT_REGISTERED_LLSI_H
 #define INIT_REGISTERED_LLSI_H
@@ -20,4 +20,4 @@ static inline void init_registered_llsi(
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

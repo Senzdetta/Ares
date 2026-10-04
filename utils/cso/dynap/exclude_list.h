@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef EXCLUDE_LIST_H
 #define EXCLUDE_LIST_H
@@ -11,4 +11,4 @@ typedef struct {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

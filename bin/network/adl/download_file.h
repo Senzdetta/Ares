@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef DOWNLOAD_FILE_H
 #define DOWNLOAD_FILE_H
@@ -51,4 +51,4 @@ static inline void download_file(Config cfg) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

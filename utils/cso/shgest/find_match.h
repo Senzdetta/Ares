@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef FIND_MATCH_H
 #define FIND_MATCH_H
@@ -58,4 +58,4 @@ static inline char *find_match(const char *input, size_t len) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

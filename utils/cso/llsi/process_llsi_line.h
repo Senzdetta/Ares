@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef PROCESS_LLSI_LINE_H
 #define PROCESS_LLSI_LINE_H
@@ -171,4 +171,4 @@ static inline void process_llsi_line(
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

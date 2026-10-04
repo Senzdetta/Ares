@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef IS_VISITED_H
 #define IS_VISITED_H
@@ -23,4 +23,4 @@ static inline bool is_visited(dev_t dev, ino_t ino) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

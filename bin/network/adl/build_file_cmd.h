@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef BUILD_FILE_CMD_H
 #define BUILD_FILE_CMD_H
@@ -98,4 +98,4 @@ static inline void build_file_cmd(
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

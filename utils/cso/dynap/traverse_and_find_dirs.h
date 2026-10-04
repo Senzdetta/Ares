@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef TRAVERSE_AND_FIND_DIRS_H
 #define TRAVERSE_AND_FIND_DIRS_H
@@ -82,4 +82,4 @@ static inline void traverse_and_find_dirs(
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

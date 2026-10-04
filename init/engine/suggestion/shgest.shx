@@ -1,6 +1,6 @@
-# https://github.com/Zeronetsec/Ares
+# https://github.com/Senzdetta/Ares
 
 builtin shgest
 bind -x '"\C-l": command clear'
 
-# Copyright (c) 2026 Zeronetsec
+# Copyright (c) 2026 Senzdetta

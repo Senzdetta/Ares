@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef ADD_REGISTERED_PATH_H
 #define ADD_REGISTERED_PATH_H
@@ -29,4 +29,4 @@ static inline void add_registered_path(
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

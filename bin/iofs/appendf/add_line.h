@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef ADD_LINE_H
 #define ADD_LINE_H
@@ -23,4 +23,4 @@ static inline void add_line(LineArray *arr, const char *line) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

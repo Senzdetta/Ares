@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef LIST_THEMES_H
 #define LIST_THEMES_H
@@ -32,4 +32,4 @@ static inline void list_themes(void) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

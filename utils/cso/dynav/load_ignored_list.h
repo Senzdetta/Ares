@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef LOAD_IGNORED_LIST_H
 #define LOAD_IGNORED_LIST_H
@@ -82,4 +82,4 @@ static inline void load_ignored_list(
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

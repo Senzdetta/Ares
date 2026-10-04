@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef UNLINK_CB_H
 #define UNLINK_CB_H
@@ -55,4 +55,4 @@ static inline int unlink_cb(
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

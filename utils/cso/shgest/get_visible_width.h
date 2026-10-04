@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef GET_VISIBLE_WIDTH_H
 #define GET_VISIBLE_WIDTH_H
@@ -75,4 +75,4 @@ static inline int get_visible_width(const char *str) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

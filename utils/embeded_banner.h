@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef utils_embeded_banner_h
 #define utils_embeded_banner_h
@@ -10,4 +10,4 @@ static const char embeded_banner[] = {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

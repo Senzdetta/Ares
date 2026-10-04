@@ -1,4 +1,4 @@
-# https://github.com/Zeronetsec/Ares
+# https://github.com/Senzdetta/Ares
 
 alias ls='command eza --icons ${LS_OPTIONS}'
 alias ll='command eza --icons -lah --color=always'
@@ -14,4 +14,4 @@ alias egrep='command egrep --color=always'
 
 alias envpath='echo -e "\x1b[0;32m${PATH//:/\\n}\x1b[0m"'
 
-# Copyright (c) 2026 Zeronetsec
+# Copyright (c) 2026 Senzdetta

@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef GET_CONFIG_H
 #define GET_CONFIG_H
@@ -30,4 +30,4 @@ static inline void get_config(char *out_path, size_t size) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

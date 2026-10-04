@@ -1,4 +1,4 @@
-# https://github.com/Zeronetsec/Ares
+# https://github.com/Senzdetta/Ares
 
 function __fzf_history_searcher__() {
     local selected_command="$(
@@ -21,4 +21,4 @@ function __fzf_history_searcher__() {
     fi
 }; readonly -f __fzf_history_searcher__
 
-# Copyright (c) 2026 Zeronetsec
+# Copyright (c) 2026 Senzdetta

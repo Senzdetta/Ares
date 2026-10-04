@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef TRIM_LINE_H
 #define TRIM_LINE_H
@@ -24,4 +24,4 @@ static inline char *trim_line(char *line) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

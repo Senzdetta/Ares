@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef FIND_MAP_H
 #define FIND_MAP_H
@@ -20,4 +20,4 @@ static inline char* find_map(const char *key) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

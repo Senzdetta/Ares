@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef FREE_REGISTERED_LLSI_H
 #define FREE_REGISTERED_LLSI_H
@@ -24,4 +24,4 @@ static inline void free_registered_llsi(
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

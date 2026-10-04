@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef CUSTOM_REDISPLAY_H
 #define CUSTOM_REDISPLAY_H
@@ -175,4 +175,4 @@ static inline void custom_redisplay(void) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

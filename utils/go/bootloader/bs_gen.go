@@ -1,11 +1,11 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 package main
 
 import (
     "os"
     "fmt"
-    "github.com/Zeronetsec/Ares/lib/std/go/color"
+    "github.com/Senzdetta/Ares/lib/std/go/color"
 )
 
 func BSgen() {
@@ -54,4 +54,4 @@ func BSgen() {
     )
 }
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

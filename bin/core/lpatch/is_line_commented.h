@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef IS_LINE_COMMENTED_H
 #define IS_LINE_COMMENTED_H
@@ -20,4 +20,4 @@ static inline int is_line_commented(const char *line) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

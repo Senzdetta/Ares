@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef INCLUDE_BUILTIN_H
 #define INCLUDE_BUILTIN_H
@@ -104,4 +104,4 @@ static inline int include_builtin(WORD_LIST *list) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

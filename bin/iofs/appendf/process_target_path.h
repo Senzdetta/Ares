@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef PROCESS_TARGET_PATH_H
 #define PROCESS_TARGET_PATH_H
@@ -92,4 +92,4 @@ static inline void process_target_path(
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

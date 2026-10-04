@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef DIR_HAS_FILES_H
 #define DIR_HAS_FILES_H
@@ -55,4 +55,4 @@ static inline int dir_has_files(const char *dir_path) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

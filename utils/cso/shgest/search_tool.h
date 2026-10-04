@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef SEARCH_TOOL_H
 #define SEARCH_TOOL_H
@@ -68,4 +68,4 @@ static inline char *search_tool(
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

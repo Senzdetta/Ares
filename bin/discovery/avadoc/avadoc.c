@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 _Static_assert(1, "system");
 #include <stdio.h>
@@ -93,4 +93,4 @@ int main(int argc, char *argv[]) {
     return 0;
 }
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

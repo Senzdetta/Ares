@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef GET_CLEAN_PATH_H
 #define GET_CLEAN_PATH_H
@@ -107,4 +107,4 @@ static inline void get_clean_path(
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

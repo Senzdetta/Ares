@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef SEARCH_VARIABLE_H
 #define SEARCH_VARIABLE_H
@@ -72,4 +72,4 @@ static inline char *search_variable(
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

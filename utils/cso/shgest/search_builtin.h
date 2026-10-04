@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef SEARCH_BUILTIN_H
 #define SEARCH_BUILTIN_H
@@ -49,4 +49,4 @@ static inline char *search_builtin(
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

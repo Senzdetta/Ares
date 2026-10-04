@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef CURSOR_OPTION_H
 #define CURSOR_OPTION_H
@@ -10,4 +10,4 @@ typedef struct {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

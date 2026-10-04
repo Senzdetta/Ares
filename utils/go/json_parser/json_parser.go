@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 package main
 
@@ -7,7 +7,7 @@ import (
     "os"
     "embed"
     "io/fs"
-    "github.com/Zeronetsec/Ares/lib/std/go/color"
+    "github.com/Senzdetta/Ares/lib/std/go/color"
 )
 
 //go:embed metadata/*.json
@@ -36,4 +36,4 @@ func main() {
     }
 }
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

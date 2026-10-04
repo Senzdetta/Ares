@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef utils_aresroot_h
 #define utils_aresroot_h
@@ -43,4 +43,4 @@ static inline const char* aresroot(void) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef CLONE_GIT_H
 #define CLONE_GIT_H
@@ -77,4 +77,4 @@ static inline void clone_git(Config cfg) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

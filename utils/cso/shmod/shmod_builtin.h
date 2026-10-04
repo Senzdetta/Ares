@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef SHMOD_BUILTIN_H
 #define SHMOD_BUILTIN_H
@@ -53,4 +53,4 @@ static inline int shmod_builtin(WORD_LIST *list) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

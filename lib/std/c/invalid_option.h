@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef INVALID_OPTION_H
 #define INVALID_OPTION_H
@@ -26,4 +26,4 @@ static inline void invalid_option(
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

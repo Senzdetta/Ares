@@ -1,10 +1,10 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 package missing_argument
 
 import (
     "fmt"
-    "github.com/Zeronetsec/Ares/lib/std/go/color"
+    "github.com/Senzdetta/Ares/lib/std/go/color"
 )
 
 func Execute(command string) {
@@ -19,4 +19,4 @@ func Execute(command string) {
     )
 }
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

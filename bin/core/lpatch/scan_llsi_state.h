@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef SCAN_LLSI_STATE_H
 #define SCAN_LLSI_STATE_H
@@ -83,4 +83,4 @@ static inline int scan_llsi_state(
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

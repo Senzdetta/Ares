@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef MAP_ENTRY_H
 #define MAP_ENTRY_H
@@ -23,4 +23,4 @@ static int map_count = 0;
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

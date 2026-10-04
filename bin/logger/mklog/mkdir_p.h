@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef MKDIR_P_H
 #define MKDIR_P_H
@@ -37,4 +37,4 @@ static inline void mkdir_p(const char *dir) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

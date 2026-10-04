@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #define _XOPEN_SOURCE 500
 
@@ -145,4 +145,4 @@ int main(int argc, char *argv[]) {
     return 0;
 }
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

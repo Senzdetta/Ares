@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef RUN_ACON_H
 #define RUN_ACON_H
@@ -86,4 +86,4 @@ static inline void run_acon(const char *file, int raw_mode) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

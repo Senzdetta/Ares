@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 package main
 
@@ -7,9 +7,9 @@ import (
     "fmt"
     "strconv"
     "strings"
-    "github.com/Zeronetsec/Ares/lib/std/go/color"
-    "github.com/Zeronetsec/Ares/lib/std/go/missing_argument"
-    "github.com/Zeronetsec/Ares/lib/std/go/invalid_option"
+    "github.com/Senzdetta/Ares/lib/std/go/color"
+    "github.com/Senzdetta/Ares/lib/std/go/missing_argument"
+    "github.com/Senzdetta/Ares/lib/std/go/invalid_option"
 )
 
 func parseCLIArgs() (
@@ -68,4 +68,4 @@ func parseCLIArgs() (
     return configPath, refreshMs, maxProcsStr
 }
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

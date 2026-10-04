@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef CATCHYPR_BUILTIN_H
 #define CATCHYPR_BUILTIN_H
@@ -82,4 +82,4 @@ static inline int catchypr_builtin(WORD_LIST *list) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

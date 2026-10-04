@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 init::llsi {
     reloadshell -> init/llsi/reloadshell.llsi
@@ -11,4 +11,4 @@ lib::std::shell::cso {
     runtime.free -> lib/std/shell/cso/free.llsi
 }
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

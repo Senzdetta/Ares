@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef READ_FILE_TO_ARRAY_H
 #define READ_FILE_TO_ARRAY_H
@@ -38,4 +38,4 @@ static inline void read_file_to_array(
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

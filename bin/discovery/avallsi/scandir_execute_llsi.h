@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef SCANDIR_EXECUTE_LLSI_H
 #define SCANDIR_EXECUTE_LLSI_H
@@ -306,4 +306,4 @@ static inline bool scandir_execute_llsi(
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

@@ -1,4 +1,4 @@
-# https://github.com/Zeronetsec/Ares
+# https://github.com/Senzdetta/Ares
 
 function lib::std::shell::cso::free() {
     enable -f \
@@ -32,4 +32,4 @@ function lib::std::shell::cso::free() {
 readonly -f lib::std::shell::cso::free
 export -f lib::std::shell::cso::free
 
-# Copyright (c) 2026 Zeronetsec
+# Copyright (c) 2026 Senzdetta

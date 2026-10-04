@@ -1,4 +1,4 @@
--- https://github.com/Zeronetsec/Ares
+-- https://github.com/Senzdetta/Ares
 
 local yumipr = {}
 yumipr.posixvar = {}
@@ -37,4 +37,4 @@ setmetatable(yumipr.posixvar, {
 
 return yumipr
 
--- Copyright (c) 2026 Zeronetsec
+-- Copyright (c) 2026 Senzdetta

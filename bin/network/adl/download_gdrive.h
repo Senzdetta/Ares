@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef DOWNLOAD_GDRIVE_H
 #define DOWNLOAD_GDRIVE_H
@@ -65,4 +65,4 @@ static inline void download_gdrive(Config cfg) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

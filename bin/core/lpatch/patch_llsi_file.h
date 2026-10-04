@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef PATCH_LLSI_FILE_H
 #define PATCH_LLSI_FILE_H
@@ -118,4 +118,4 @@ static inline void patch_llsi_file(
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

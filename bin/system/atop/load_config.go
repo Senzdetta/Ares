@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 package main
 
@@ -7,7 +7,7 @@ import (
     "fmt"
     "strconv"
     "path/filepath"
-    "github.com/Zeronetsec/Ares/lib/std/go/color"
+    "github.com/Senzdetta/Ares/lib/std/go/color"
 )
 
 func loadConfig() Config {
@@ -73,4 +73,4 @@ func loadConfig() Config {
     return cfg
 }
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

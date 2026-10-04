@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef PROCESS_UNREADONLY_FUNCTION_H
 #define PROCESS_UNREADONLY_FUNCTION_H
@@ -24,4 +24,4 @@ static inline int process_unreadonly_function(const char *func_name) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

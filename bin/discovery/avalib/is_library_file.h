@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef IS_LIBRARY_FILE_H
 #define IS_LIBRARY_FILE_H
@@ -34,4 +34,4 @@ static inline bool is_library_file(const char *name) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

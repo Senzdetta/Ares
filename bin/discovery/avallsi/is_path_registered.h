@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef IS_PATH_REGISTERED_H
 #define IS_PATH_REGISTERED_H
@@ -25,4 +25,4 @@ static inline bool is_path_registered(
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

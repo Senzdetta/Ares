@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 package main
 
@@ -7,8 +7,8 @@ import(
     "strings"
     "fmt"
     "path/filepath"
-    "github.com/Zeronetsec/Ares/lib/std/go/color"
-    "github.com/Zeronetsec/Ares/lib/std/go/missing_argument"
+    "github.com/Senzdetta/Ares/lib/std/go/color"
+    "github.com/Senzdetta/Ares/lib/std/go/missing_argument"
 )
 
 func main() {
@@ -122,4 +122,4 @@ func main() {
     }
 }
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

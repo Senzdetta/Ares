@@ -1,4 +1,4 @@
-# https://github.com/Zeronetsec/Ares
+# https://github.com/Senzdetta/Ares
 
 function __fzf_envtool__() {
     local category
@@ -73,4 +73,4 @@ function __fzf_envtool__() {
     done
 }; readonly -f __fzf_envtool__
 
-# Copyright (c) 2026 Zeronetsec
+# Copyright (c) 2026 Senzdetta

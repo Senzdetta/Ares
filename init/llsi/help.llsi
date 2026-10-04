@@ -1,4 +1,4 @@
-# https://github.com/Zeronetsec/Ares
+# https://github.com/Senzdetta/Ares
 
 function help() {
     case "${1}" in
@@ -21,4 +21,4 @@ function help() {
     esac
 }; readonly -f help
 
-# Copyright (c) 2026 Zeronetsec
+# Copyright (c) 2026 Senzdetta

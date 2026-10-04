@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef EXPAND_ENV_H
 #define EXPAND_ENV_H
@@ -77,4 +77,4 @@ static inline char *expand_env(const char *path) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

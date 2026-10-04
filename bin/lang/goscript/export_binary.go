@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 package main
 
@@ -9,7 +9,7 @@ import (
     "encoding/base64"
     "crypto/rand"
     "path/filepath"
-    "github.com/Zeronetsec/Ares/lib/std/go/color"
+    "github.com/Senzdetta/Ares/lib/std/go/color"
 )
 
 func exportBinary(cfg Config, binaryCache string) {
@@ -63,4 +63,4 @@ func exportBinary(cfg Config, binaryCache string) {
     os.Exit(0)
 }
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

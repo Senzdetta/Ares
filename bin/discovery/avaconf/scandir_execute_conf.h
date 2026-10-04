@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef SCANDIR_EXECUTE_CONF_H
 #define SCANDIR_EXECUTE_CONF_H
@@ -204,4 +204,4 @@ static inline bool scandir_execute_conf(
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

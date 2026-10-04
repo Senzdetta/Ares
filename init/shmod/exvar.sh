@@ -1,4 +1,4 @@
-# https://github.com/Zeronetsec/Ares
+# https://github.com/Senzdetta/Ares
 
 export LANG=C.UTF-8
 export LC_ALL=C.UTF-8
@@ -15,4 +15,4 @@ export PROMPT_DIRTRIM=2
 export PS2='\[\033[1;34m\]›\[\033[0m\] '
 export PS4='\[\033[0m\]\[\033[1;31m\][DEBUG]\[\033[0m\] '
 
-# Copyright (c) 2026 Zeronetsec
+# Copyright (c) 2026 Senzdetta

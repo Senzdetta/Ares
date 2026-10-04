@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef REGISTERED_LLSI_T_H
 #define REGISTERED_LLSI_T_H
@@ -14,4 +14,4 @@ typedef struct {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

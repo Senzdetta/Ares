@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef LOAD_EXCLUSIONS_FILE_H
 #define LOAD_EXCLUSIONS_FILE_H
@@ -30,4 +30,4 @@ static inline void load_exclusions_file(
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

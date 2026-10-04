@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef utils_embeded_bootloader_h
 #define utils_embeded_bootloader_h
@@ -14,4 +14,4 @@ static const size_t embeded_bootloader_size = sizeof(embeded_bootloader);
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

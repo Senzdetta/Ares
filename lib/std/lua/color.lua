@@ -1,4 +1,4 @@
--- https://github.com/Zeronetsec/Ares
+-- https://github.com/Senzdetta/Ares
 
 local color = {}
 
@@ -22,4 +22,4 @@ color.RO = "\x1b[38;5;202m"
 
 return color
 
--- Copyright (c) 2026 Zeronetsec
+-- Copyright (c) 2026 Senzdetta

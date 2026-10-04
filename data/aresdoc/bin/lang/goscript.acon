@@ -12,7 +12,7 @@ Example {color.GG}hello.gs{color.N}:
 
 {color.PP}import {color.N}(
     {color.YY}"fmt"{color.N}
-    {color.YY}"github.com/Zeronetsec/Ares/lib/std/go/color"{color.N}
+    {color.YY}"github.com/Senzdetta/Ares/lib/std/go/color"{color.N}
 )
 
 {color.PP}func {color.BB}main{color.N}() {

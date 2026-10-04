@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef FORMAT_SIGNAL_STRING_H
 #define FORMAT_SIGNAL_STRING_H
@@ -43,4 +43,4 @@ static inline void format_signal_string(
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

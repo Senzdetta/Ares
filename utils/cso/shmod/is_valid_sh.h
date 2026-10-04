@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef IS_VALID_SH_H
 #define IS_VALID_SH_H
@@ -34,4 +34,4 @@ static inline int is_valid_sh(const char *filepath) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

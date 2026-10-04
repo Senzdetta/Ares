@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef IS_IGNORED_FOLDER_H
 #define IS_IGNORED_FOLDER_H
@@ -28,4 +28,4 @@ static inline int is_ignored_folder(
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

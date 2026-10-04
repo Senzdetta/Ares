@@ -1,4 +1,4 @@
-# https://github.com/Zeronetsec/Ares
+# https://github.com/Senzdetta/Ares
 
 export color_N='\x1b[0m'; readonly color_N
 export color_R='\x1b[1;31m'; readonly color_R
@@ -18,4 +18,4 @@ export color_WW='\x1b[0;37m'; readonly color_WW
 export color_DG='\x1b[1;90m'; readonly color_DG
 export color_RO='\x1b[38;5;202m'; readonly color_RO
 
-# Copyright (c) 2026 Zeronetsec
+# Copyright (c) 2026 Senzdetta

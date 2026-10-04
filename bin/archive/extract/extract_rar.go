@@ -1,10 +1,10 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 package main
 
 import (
     "fmt"
-    "github.com/Zeronetsec/Ares/lib/std/go/color"
+    "github.com/Senzdetta/Ares/lib/std/go/color"
 )
 
 func extractRar(src, dest, password string) error {
@@ -29,4 +29,4 @@ func extractRar(src, dest, password string) error {
     return nil
 }
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

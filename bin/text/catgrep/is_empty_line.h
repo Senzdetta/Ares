@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef IS_EMPTY_LINE_H
 #define IS_EMPTY_LINE_H
@@ -19,4 +19,4 @@ static inline bool is_empty_line(const char *str) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

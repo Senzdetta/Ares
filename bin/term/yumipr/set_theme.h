@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef SET_THEME_H
 #define SET_THEME_H
@@ -30,4 +30,4 @@ static inline void set_theme(const char *new_theme) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

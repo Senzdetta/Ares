@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 package main
 
@@ -58,4 +58,4 @@ func damerauLevenshtein(a, b string) int {
     return d[len(ar)+1][len(br)+1]
 }
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

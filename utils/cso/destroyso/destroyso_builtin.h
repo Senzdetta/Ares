@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef DESTROYSO_BUILTIN_H
 #define DESTROYSO_BUILTIN_H
@@ -44,4 +44,4 @@ static inline int destroyso_builtin(WORD_LIST *list) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef CURSOR_STYLES_H
 #define CURSOR_STYLES_H
@@ -28,4 +28,4 @@ static const size_t TOTAL_STYLES = sizeof(
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

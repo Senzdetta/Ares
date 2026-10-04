@@ -1,4 +1,4 @@
--- https://github.com/Zeronetsec/Ares
+-- https://github.com/Senzdetta/Ares
 
 local yumipr = {}
 
@@ -25,4 +25,4 @@ end
 
 return yumipr
 
--- Copyright (c) 2026 Zeronetsec
+-- Copyright (c) 2026 Senzdetta

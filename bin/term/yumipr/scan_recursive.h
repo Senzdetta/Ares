@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef SCAN_RECURSIVE_H
 #define SCAN_RECURSIVE_H
@@ -150,4 +150,4 @@ static inline void scan_recursive(
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

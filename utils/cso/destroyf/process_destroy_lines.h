@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef PROCESS_DESTROY_LINES_H
 #define PROCESS_DESTROY_LINES_H
@@ -71,4 +71,4 @@ static inline void process_destroy_lines(char *data_copy) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

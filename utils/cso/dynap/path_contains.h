@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef PATH_CONTAINS_H
 #define PATH_CONTAINS_H
@@ -58,4 +58,4 @@ static inline int path_contains(
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

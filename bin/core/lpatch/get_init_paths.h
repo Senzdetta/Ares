@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef GET_INIT_PATHS_H
 #define GET_INIT_PATHS_H
@@ -33,4 +33,4 @@ static inline void get_init_paths(
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

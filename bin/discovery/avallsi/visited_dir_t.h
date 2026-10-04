@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef VISITED_DIR_T_H
 #define VISITED_DIR_T_H
@@ -18,4 +18,4 @@ extern size_t visited_cap;
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef GET_FORMATTED_PATH_H
 #define GET_FORMATTED_PATH_H
@@ -100,4 +100,4 @@ static inline void get_formatted_path(
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

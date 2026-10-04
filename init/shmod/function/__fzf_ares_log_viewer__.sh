@@ -1,4 +1,4 @@
-# https://github.com/Zeronetsec/Ares
+# https://github.com/Senzdetta/Ares
 
 function __fzf_ares_log_viewer__() {
     local log_dir="${__areslog__:-.}"
@@ -27,4 +27,4 @@ function __fzf_ares_log_viewer__() {
     fi
 }; readonly -f __fzf_ares_log_viewer__
 
-# Copyright (c) 2026 Zeronetsec
+# Copyright (c) 2026 Senzdetta

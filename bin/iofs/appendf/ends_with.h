@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef ENDS_WITH_H
 #define ENDS_WITH_H
@@ -31,4 +31,4 @@ static inline bool ends_with(
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

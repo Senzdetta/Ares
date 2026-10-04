@@ -1,11 +1,11 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 package main
 
 import (
     "os"
     "strings"
-    "github.com/Zeronetsec/Ares/lib/std/go/missing_argument"
+    "github.com/Senzdetta/Ares/lib/std/go/missing_argument"
 )
 
 func parseArgs(args []string) Config {
@@ -52,4 +52,4 @@ func parseArgs(args []string) Config {
     return cfg
 }
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 package main
 
@@ -54,4 +54,4 @@ color-link type.extended "default"
 # https://github.com/catppuccin/micro/blob/main/themes/catppuccin-mocha.micro
 `
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

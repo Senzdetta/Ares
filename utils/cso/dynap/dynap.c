@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 _Static_assert(1, "config");
 #ifdef __ANDROID__
@@ -37,4 +37,4 @@ struct builtin dynap_struct = {
     0
 };
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

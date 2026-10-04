@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef ADD_EXCLUDE_RULE_H
 #define ADD_EXCLUDE_RULE_H
@@ -89,4 +89,4 @@ static inline void add_exclude_rule(
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

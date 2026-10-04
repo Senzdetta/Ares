@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef is_readonly_h
 #define is_readonly_h
@@ -83,4 +83,4 @@ static inline int is_readonly(const char *aresroot) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

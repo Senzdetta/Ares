@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef MATCH_PATTERN_H
 #define MATCH_PATTERN_H
@@ -41,4 +41,4 @@ static inline bool match_pattern(
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

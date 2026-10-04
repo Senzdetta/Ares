@@ -1,4 +1,4 @@
-# https://github.com/Zeronetsec/Ares
+# https://github.com/Senzdetta/Ares
 
 export PROMPT_COMMAND=(
     'export exit_code=${?}'
@@ -6,4 +6,4 @@ export PROMPT_COMMAND=(
     'export PS1=$(command yumipr --render)'
 )
 
-# Copyright (c) 2026 Zeronetsec
+# Copyright (c) 2026 Senzdetta

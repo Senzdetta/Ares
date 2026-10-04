@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef CMP_STR_H
 #define CMP_STR_H
@@ -14,4 +14,4 @@ static inline int cmp_str(const void *a, const void *b) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

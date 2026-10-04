@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef UNREADONLYV_BUILTIN_H
 #define UNREADONLYV_BUILTIN_H
@@ -75,4 +75,4 @@ static inline int unreadonlyv_builtin(WORD_LIST *list) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

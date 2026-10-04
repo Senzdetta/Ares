@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef PARSE_LLSI_INIT_H
 #define PARSE_LLSI_INIT_H
@@ -61,4 +61,4 @@ static inline bool parse_llsi_init(
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

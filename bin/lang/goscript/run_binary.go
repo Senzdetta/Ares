@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 package main
 
@@ -6,7 +6,7 @@ import (
     "syscall"
     "os"
     "fmt"
-    "github.com/Zeronetsec/Ares/lib/std/go/color"
+    "github.com/Senzdetta/Ares/lib/std/go/color"
 )
 
 func runBinary(cfg Config, binaryCache string) {
@@ -28,4 +28,4 @@ func runBinary(cfg Config, binaryCache string) {
     }
 }
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

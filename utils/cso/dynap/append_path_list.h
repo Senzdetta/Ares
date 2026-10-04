@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef APPEND_PATH_LIST_H
 #define APPEND_PATH_LIST_H
@@ -34,4 +34,4 @@ static inline void append_path_list(
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

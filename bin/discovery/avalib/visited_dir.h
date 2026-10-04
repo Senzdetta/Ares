@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef VISITED_DIR_H
 #define VISITED_DIR_H
@@ -18,4 +18,4 @@ static size_t visited_capacity = 0;
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

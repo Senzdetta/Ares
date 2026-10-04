@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef EXPAND_PATH_VARS_H
 #define EXPAND_PATH_VARS_H
@@ -60,4 +60,4 @@ static inline void expand_path_vars(
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

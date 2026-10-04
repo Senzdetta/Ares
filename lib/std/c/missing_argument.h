@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef MISSING_ARGUMENT_H
 #define MISSING_ARGUMENT_H
@@ -25,4 +25,4 @@ static inline void missing_argument(
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

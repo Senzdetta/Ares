@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef SOURCE_SINGLE_MODULE_H
 #define SOURCE_SINGLE_MODULE_H
@@ -56,4 +56,4 @@ static inline int source_single_module(
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

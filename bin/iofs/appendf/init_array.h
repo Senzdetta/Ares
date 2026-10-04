@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef INIT_ARRAY_H
 #define INIT_ARRAY_H
@@ -19,4 +19,4 @@ static inline void init_array(LineArray *arr) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

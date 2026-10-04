@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef FREE_IGNORED_LIST_H
 #define FREE_IGNORED_LIST_H
@@ -27,4 +27,4 @@ static inline void free_ignored_list(IgnoredList *list) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

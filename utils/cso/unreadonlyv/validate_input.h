@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef VALIDATE_INPUT_H
 #define VALIDATE_INPUT_H
@@ -31,4 +31,4 @@ static inline char *validate_input(WORD_LIST *list) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

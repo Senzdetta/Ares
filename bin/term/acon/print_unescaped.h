@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef PRINT_UNESCAPED_H
 #define PRINT_UNESCAPED_H
@@ -54,4 +54,4 @@ static inline void print_unescaped(const char *str) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

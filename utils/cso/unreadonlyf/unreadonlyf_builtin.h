@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef UNREADONLYF_BUILTIN_H
 #define UNREADONLYF_BUILTIN_H
@@ -74,4 +74,4 @@ static inline int unreadonlyf_builtin(WORD_LIST *list) {
 
 #endif
 
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares

@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef HANDLE_RIGHT_ARROW_H
 #define HANDLE_RIGHT_ARROW_H
@@ -31,4 +31,4 @@ static inline int handle_right_arrow(int count, int key) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

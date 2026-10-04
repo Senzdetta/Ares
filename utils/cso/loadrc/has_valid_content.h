@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef HAS_VALID_CONTENT_H
 #define HAS_VALID_CONTENT_H
@@ -37,4 +37,4 @@ static inline int has_valid_content(const char *filename) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

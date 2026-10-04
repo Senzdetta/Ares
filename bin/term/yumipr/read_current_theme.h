@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef READ_CURRENT_THEME_H
 #define READ_CURRENT_THEME_H
@@ -69,4 +69,4 @@ static inline int read_current_theme(char *out_theme, size_t size) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

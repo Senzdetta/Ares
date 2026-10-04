@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 package main
 
@@ -46,4 +46,4 @@ func decode(input string, a *Algo, nospace bool) string {
     return strings.Join(decodedWords, " ")
 }
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

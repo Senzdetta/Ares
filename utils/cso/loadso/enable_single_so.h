@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef ENABLE_SINGLE_SO_H
 #define ENABLE_SINGLE_SO_H
@@ -109,4 +109,4 @@ static inline int enable_single_so(
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

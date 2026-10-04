@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef utils_invalid_option_h
 #define utils_invalid_option_h
@@ -25,4 +25,4 @@ static inline void invalidOption(const char *input) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

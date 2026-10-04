@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef SCANDIR_EXECUTE_LIB_H
 #define SCANDIR_EXECUTE_LIB_H
@@ -203,4 +203,4 @@ static inline bool scandir_execute_lib(
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

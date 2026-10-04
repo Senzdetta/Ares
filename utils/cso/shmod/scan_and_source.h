@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef SCAN_AND_SOURCE_H
 #define SCAN_AND_SOURCE_H
@@ -61,4 +61,4 @@ static inline void scan_and_source(const char *dir_path) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

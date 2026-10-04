@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef HAS_VALID_SH_FILES_H
 #define HAS_VALID_SH_FILES_H
@@ -65,4 +65,4 @@ static inline int has_valid_sh_files(const char *dir_path) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

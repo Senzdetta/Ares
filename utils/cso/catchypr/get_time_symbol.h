@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef GET_TIME_SYMBOL_H
 #define GET_TIME_SYMBOL_H
@@ -22,4 +22,4 @@ static inline const char* get_time_symbol(void) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

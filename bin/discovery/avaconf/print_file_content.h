@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef PRINT_FILE_CONTENT_H
 #define PRINT_FILE_CONTENT_H
@@ -38,4 +38,4 @@ static inline void print_file_content(const char *file_path) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

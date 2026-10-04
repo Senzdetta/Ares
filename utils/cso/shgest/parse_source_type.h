@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef PARSE_SOURCE_TYPE_H
 #define PARSE_SOURCE_TYPE_H
@@ -43,4 +43,4 @@ static inline SourceType parse_source_type(const char *key) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta

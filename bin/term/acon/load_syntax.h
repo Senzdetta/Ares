@@ -1,4 +1,4 @@
-// https://github.com/Zeronetsec/Ares
+// https://github.com/Senzdetta/Ares
 
 #ifndef LOAD_SYNTAX_H
 #define LOAD_SYNTAX_H
@@ -90,4 +90,4 @@ static inline void load_syntax(const char *file) {
 
 #endif
 
-// Copyright (c) 2026 Zeronetsec
+// Copyright (c) 2026 Senzdetta
