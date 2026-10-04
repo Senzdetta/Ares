@@ -1,0 +1,12 @@
+{color.GG}openfile.conf {color.N}is the alias configuration file used by {color.GG}Openfile{color.N}.
+It maps short alias names to file paths for quicker access.
+
+Example {color.BB}openfile.conf{color.N}:
+{color.DG}# comment{color.N}
+{color.PP}myalias {color.WW}= {color.YY}mylong/path/to/script.sh{color.N}
+
+Example:
+    {color.R}- {color.GG}openfile {color.CC}myalias{color.N}
+
+The alias above opens: {color.GG}mylong/path/to/script.sh{color.N}
+Aliases can be listed with: {color.GG}openfile {color.CC}--list-alias{color.N}

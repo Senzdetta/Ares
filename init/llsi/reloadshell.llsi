@@ -1,0 +1,9 @@
+# https://github.com/Zeronetsec/Ares
+
+function reloadshell() {
+    exec ares --shell
+}
+readonly -f reloadshell
+export -f reloadshell
+
+# Copyright (c) 2026 Zeronetsec

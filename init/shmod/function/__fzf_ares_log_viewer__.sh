@@ -5,7 +5,7 @@ function __fzf_ares_log_viewer__() {
     local selected_log="$(
         command find "${log_dir}" -type f \( -name "*.log" -o -name "*.txt" \) \
             2>/dev/null | \
-                command fzf \
+                command env SHELL=$(command which bash) fzf \
                     --height 40% \
                     --layout=reverse \
                     --border \

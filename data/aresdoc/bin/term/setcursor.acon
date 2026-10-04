@@ -1,0 +1,17 @@
+{color.GG}Setcursor {color.N}changes the terminal cursor appearance using predefined cursor styles.
+
+Usage: {color.GG}setcursor {color.CC}<style>{color.N}
+
+Available style:
+    {color.R}- {color.GG}default{color.N}
+    {color.R}- {color.GG}block{color.N}
+    {color.R}- {color.GG}blink-block{color.N}
+    {color.R}- {color.GG}line{color.N}
+    {color.R}- {color.GG}blink-line{color.N}
+    {color.R}- {color.GG}underline{color.N}
+    {color.R}- {color.GG}blink-underline{color.N}
+
+Example:
+    {color.R}- {color.GG}setcursor {color.CC}block{color.N}
+    {color.R}- {color.GG}setcursor {color.CC}blink-line{color.N}
+    {color.R}- {color.GG}setcursor {color.CC}default{color.N}

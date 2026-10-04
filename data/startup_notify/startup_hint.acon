@@ -1,0 +1,16 @@
+{color.B}[*] {color.N}From: {color.GG}$__config__/startup.conf {color.DG}({color.PP}startup_hint {color.WW}= {color.YY}true{color.DG}) {color.N}{
+    Usage:
+        {color.R}- {color.GG}atoolkit {color.WW}to discover all ares binaries.{color.N}
+        {color.R}- {color.GG}avadoc {color.WW}to display available documentation.{color.N}
+        {color.R}- {color.GG}aresdoc {color.CC}<name> {color.WW}to view specific documentation.{color.N}
+        {color.R}- {color.GG}chstartup {color.WW}or {color.GG}openfile {color.CC}startup.conf {color.WW}to open the tui editor to modify startup configuration.{color.N}
+        {color.R}- {color.GG}reloadshell {color.WW}to reload the shell.{color.N}
+        {color.R}- {color.GG}help {color.WW}or {color.GG}hint {color.WW}to show more basic usage.{color.N}
+
+    Tips:
+        To hide this hint, choose one of these methods:
+        {color.R}- {color.WW}Manually edit: {color.GG}$__config__/startup.conf {color.DG}({color.WW}change: {color.PP}startup_hint {color.WW}to {color.YY}false{color.DG}){color.N}
+        {color.R}- {color.WW}Use: {color.GG}chstartup {color.WW}or {color.GG}openfile {color.CC}startup.conf {color.DG}({color.WW}change: {color.PP}startup_hint {color.WW}to {color.YY}false{color.DG}){color.N}
+        {color.R}- {color.WW}Run command: {color.GG}setconf {color.CC}$__config__/startup.conf --key startup_hint --value false{color.N}
+}
+{newline}

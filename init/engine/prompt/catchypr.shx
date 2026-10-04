@@ -1,0 +1,8 @@
+# https://github.com/Zeronetsec/Ares
+
+export PROMPT_COMMAND=(
+    'export exit_code=${?}'
+    'export PS1=$(builtin catchypr)'
+)
+
+# Copyright (c) 2026 Zeronetsec

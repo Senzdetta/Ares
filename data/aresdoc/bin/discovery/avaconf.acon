@@ -1,0 +1,9 @@
+{color.GG}AVAConf {color.N}lists available configuration files, making it easier to discover and inspect framework configuration resources.
+
+Usage: {color.GG}avaconf {color.CC}[--only <path>] [--show-content]{color.N}
+
+Example:
+    {color.R}- {color.GG}avaconf{color.N}
+    {color.R}- {color.GG}avaconf {color.CC}--only config{color.N}
+    {color.R}- {color.GG}avaconf {color.CC}--show-content{color.N}
+    {color.R}- {color.GG}avaconf {color.CC}--only config/startup --show-content{color.N}

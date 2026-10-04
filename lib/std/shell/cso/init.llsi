@@ -1,0 +1,35 @@
+# https://github.com/Zeronetsec/Ares
+
+function lib::std::shell::cso::init() {
+    set -o errexit
+
+    enable -f \
+        "${__lib__}/std/shell/cso/loadso.so" \
+        loadso || \
+        return 1
+
+    builtin loadso : '(
+        lib/std/shell/cso/destroyf -> destroyf
+        lib/std/shell/cso/destroyso -> destroyso
+        lib/std/shell/cso/destroyv -> destroyv
+        lib/std/shell/cso/include -> include
+        lib/std/shell/cso/loadso -> loadso
+        lib/std/shell/cso/rhome -> rhome
+        lib/std/shell/cso/dynav -> dynav
+        lib/std/shell/cso/dynap -> dynap
+        lib/std/shell/cso/shmod -> shmod
+        lib/std/shell/cso/catchypr -> catchypr
+        lib/std/shell/cso/unreadonlyf -> unreadonlyf
+        lib/std/shell/cso/unreadonlyv -> unreadonlyv
+        lib/std/shell/cso/error -> error
+        lib/std/shell/cso/llsi -> llsi
+        lib/std/shell/cso/loadrc -> loadrc
+        lib/std/shell/cso/shgest -> shgest
+    )' || return 1
+
+    trap 'builtin error' ERR
+}
+readonly -f lib::std::shell::cso::init
+export -f lib::std::shell::cso::init
+
+# Copyright (c) 2026 Zeronetsec

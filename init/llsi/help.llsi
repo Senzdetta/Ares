@@ -1,0 +1,24 @@
+# https://github.com/Zeronetsec/Ares
+
+function help() {
+    case "${1}" in
+        "")
+            command hint
+            return ${?}
+            ;;
+        "--ares")
+            command ares --help
+            return ${?}
+            ;;
+        "--shell")
+            builtin help "${@:2}"
+            return ${?}
+            ;;
+        *)
+            command hint
+            return ${?}
+            ;;
+    esac
+}; readonly -f help
+
+# Copyright (c) 2026 Zeronetsec

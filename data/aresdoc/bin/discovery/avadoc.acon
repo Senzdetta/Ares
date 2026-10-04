@@ -1,0 +1,8 @@
+{color.GG}Avadoc {color.N}lists available documentation entries, making it easier to discover and navigate installed documentation.
+
+Usage: {color.GG}avadoc {color.CC}[--only <path>]{color.N}
+
+Example:
+    {color.R}- {color.GG}avadoc{color.N}
+    {color.R}- {color.GG}avadoc {color.CC}--only bin/core{color.N}
+    {color.R}- {color.GG}avadoc {color.CC}--only lib/std/shell/cso{color.N}

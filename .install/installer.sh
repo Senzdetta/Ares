@@ -1,12 +1,11 @@
 function install::installer() {
-    install::extern::libsoCCompile
-
-    install::extern::utilsGoCompile
-
-    install::extern::binCCompile
-    install::extern::binGoCompile
-
+    install::extern::compile
     install::extern::removeExt
+    install::extern::setShebang
+
+    install::getinstall \
+        "command chmod +x -R ${opt}/${targetins}/data/yumipr/" \
+        "Set permission for: ${color_GG}${opt}/${targetins}/data/yumipr/${color_N}"
 
     if [[ ! -d "${HOME}/.ares_log" ]]; then
         install::getinstall \
@@ -28,7 +27,13 @@ function install::installer() {
 
     if [[ ! -d "${tmp}/goscript_cache" ]]; then
         install::getinstall \
-            "command mkdir -p ${tmp}/goscript_cache" \
-            "Create directory: ${color_GG}${tmp}/goscript_cache${color_N}"
+            "command mkdir -p ${tmp}/${targetins}/goscript_cache" \
+            "Create directory: ${color_GG}${tmp}/${targetins}/goscript_cache${color_N}"
+    fi
+
+    if [[ ! -d "${tmp}/cscript_cache" ]]; then
+        install::getinstall \
+            "command mkdir -p ${tmp}/${targetins}/cscript_cache" \
+            "Create directory: ${color_GG}${tmp}/${targetins}/cscript_cache${color_N}"
     fi
 }; readonly -f install::installer

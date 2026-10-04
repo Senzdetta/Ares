@@ -1,0 +1,35 @@
+# https://github.com/Zeronetsec/Ares
+
+function lib::std::shell::cso::free() {
+    enable -f \
+        "${__lib__}/std/shell/cso/destroyso.so" \
+        destroyso || \
+        return 1
+
+    builtin destroyso : '(
+        destroyf
+        destroyv
+        include
+        loadso
+        rhome
+        dynav
+        dynap
+        shmod
+        catchypr
+        unreadonlyf
+        unreadonlyv
+        error
+        llsi
+        loadrc
+        shgest
+    )' || return 1
+
+    enable -d destroyso || return 1
+
+    trap - ERR
+    set -o errexit
+}
+readonly -f lib::std::shell::cso::free
+export -f lib::std::shell::cso::free
+
+# Copyright (c) 2026 Zeronetsec

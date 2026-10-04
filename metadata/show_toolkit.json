@@ -1,5 +1,0 @@
-{
-    "Command": "--show-toolkit",
-    "Args": "[--alpath] [--only <path>]",
-    "Description": "nanti"
-}

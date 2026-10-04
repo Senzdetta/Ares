@@ -1,0 +1,6 @@
+# https://github.com/Zeronetsec/Ares
+
+builtin shgest
+bind -x '"\C-l": command clear'
+
+# Copyright (c) 2026 Zeronetsec

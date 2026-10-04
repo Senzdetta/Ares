@@ -1,0 +1,18 @@
+{color.GG}dynav_ignore.lst {color.N}is the exclusion list used by dynav during startup.
+It prevents selected first-level directories under {color.GG}$__aresroot__ {color.N}from being exported as environment variables.
+
+Example {color.BB}dynav_ignore.lst{color.N}:
+{color.DG}# comment{color.N}
+myd1folder
+something
+
+Example:
+    {color.GG}$__aresroot__/bin          {color.N}-> {color.YY}$__bin__{color.N}
+    {color.GG}$__aresroot__/myd1folder   {color.N}-> not exported
+    {color.GG}$__aresroot__/something    {color.N}-> not exported
+    {color.GG}$__aresroot__/test         {color.N}-> {color.YY}$__test__{color.N}
+    {color.GG}$__aresroot__/module       {color.N}-> {color.YY}$__module__{color.N}
+
+{color.YY}Note{color.N}:
+    {color.R}- {color.N}dynav reads this file once during startup.
+    {color.R}- {color.N}Only first-level directories under {color.GG}$__aresroot__ {color.N}are checked.

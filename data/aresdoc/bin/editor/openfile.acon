@@ -1,0 +1,20 @@
+{color.GG}Openfile {color.N}provides quick access to files through configurable aliases and a preconfigured editor environment.
+
+Usage:
+    {color.R}- {color.GG}openfile {color.CC}<alias|file>{color.N}
+    {color.R}- {color.GG}openfile {color.CC}--list-alias{color.N}
+
+Example:
+    {color.R}- {color.GG}openfile {color.CC}myconfig{color.N}
+    {color.R}- {color.GG}openfile {color.CC}startup{color.N}
+    {color.R}- {color.GG}openfile {color.CC}README.md{color.N}
+    {color.R}- {color.GG}openfile {color.CC}--list-alias{color.N}
+
+Example {color.BB}$__config__/openfile.conf{color.N}:
+{color.DG}# comment{color.N}
+{color.PP}alias_name {color.N}= {color.YY}$support_var/actual_file.txt{color.N}
+{color.PP}myconfig {color.N}= {color.YY}$HOME/.config/myapp/config.conf{color.N}
+{color.PP}startup {color.N}= {color.YY}$__config__/startup.conf{color.N}
+
+Usage:
+    {color.R}- {color.GG}openfile {color.CC}openfile.conf {color.N}to edit config.

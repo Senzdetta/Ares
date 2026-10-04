@@ -9,4 +9,4 @@ export bkdate="$(
 )"; readonly bkdate
 
 export targetins="ares"; readonly targetins
-export targetsyml="${targetins}.sh"; readonly targetsyml
+export targetsyml="${targetins}"; readonly targetsyml

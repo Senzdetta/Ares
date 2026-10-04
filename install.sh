@@ -37,12 +37,15 @@ include : '(
     .install/backup
     .install/postins
     .install/symlink
-    .install/extern/color
-    .install/extern/libso_c_compile
-    .install/extern/utils_go_compile
-    .install/extern/bin_c_compile
-    .install/extern/bin_go_compile
+    .install/zsymlink
+    .install/extern/xcolor
+    .install/extern/compile
     .install/extern/remove_ext
+    .install/extern/linux_check
+    .install/extern/patch_bash_header
+    .install/extern/set_shebang
+    .install/extern/hashing
+    .install/extern/xxdh
 )'
 
 HOME="${HOME}"
@@ -52,6 +55,7 @@ while [[ ${#} -gt 0 ]]; do
     case "${1}" in
         "--home="*) export HOME="${1#*=}" ;;
         "--backup") export __BACKUP__=true ;;
+        "--force-yes") export __FORCEYES__=true ;;
     esac
     shift
 done

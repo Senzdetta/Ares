@@ -1,0 +1,31 @@
+{color.GG}Extract {color.N}extracts archives and compressed files into a specified output directory, with support for multiple archive formats and password-protected archives.
+
+Usage: {color.GG}extract {color.CC}<archive> [<outdir>] [--format <format>] [--password <pw>]{color.N}
+
+Supported format:
+    {color.R}- {color.GG}.zip{color.N}
+    {color.R}- {color.GG}.7z{color.N}
+    {color.R}- {color.GG}.rar{color.N}
+    {color.R}- {color.GG}.tar{color.N}
+    {color.R}- {color.GG}.tar.gz{color.N}
+    {color.R}- {color.GG}.tgz{color.N}
+    {color.R}- {color.GG}.tar.bz2{color.N}
+    {color.R}- {color.GG}.tbz2{color.N}
+    {color.R}- {color.GG}.tbz{color.N}
+    {color.R}- {color.GG}.tar.xz{color.N}
+    {color.R}- {color.GG}.txz{color.N}
+    {color.R}- {color.GG}.tzst{color.N}
+    {color.R}- {color.GG}.tar.zst{color.N}
+    {color.R}- {color.GG}.gz{color.N}
+    {color.R}- {color.GG}.gzip{color.N}
+    {color.R}- {color.GG}.bz2{color.N}
+    {color.R}- {color.GG}.bzip2{color.N}
+    {color.R}- {color.GG}.bzip{color.N}
+    {color.R}- {color.GG}.xz{color.N}
+    {color.R}- {color.GG}.zst{color.N}
+    {color.R}- {color.GG}.zstd{color.N}
+
+Example:
+    {color.R}- {color.GG}extract {color.CC}archive.zip{color.N}
+    {color.R}- {color.GG}extract {color.CC}backup.tar.gz output/{color.N}
+    {color.R}- {color.GG}extract {color.CC}secret.7z data/ --password 123{color.N}

@@ -1,0 +1,31 @@
+{color.GG}Cobf {color.N}is a customizable text obfuscation tool that encodes and decodes data using user-defined character mappings.
+
+Usage:
+    {color.R}- {color.GG}cobf {color.CC}<string> --mode <encode|decode> [--algo <map.cobf>] [--outfile <file>] [--nospace]{color.N}
+    {color.R}- {color.GG}cobf {color.CC}--file <file> --mode <encode|decode> [--algo <map.cobf>] [--outfile <file>] [--nospace]{color.N}
+
+Example {color.GG}map.cobf{color.N}:
+{color.DG}// comment{color.N}
+a {color.GG}-> {color.BB}jp~A1{color.N}
+b {color.GG}-> {color.BB}iN**?{color.N}
+c {color.GG}-> {color.BB}0'~`]{color.N}
+
+Example:
+    {color.R}- {color.GG}cobf {color.CC}"a b c" --mode encode --algo custom.cobf{color.N}
+      {color.B}› {color.WW}Expected output:{color.N}
+        {color.YY}- {color.GG}jp~A1 iN**? 0'~`]{color.N}
+
+    {color.R}- {color.GG}cobf {color.CC}"a b c" --mode encode --algo custom.cobf --nospace{color.N}
+      {color.B}› {color.WW}Expected output:{color.N}
+        {color.YY}- {color.GG}jp~A1iN**?0'~`]{color.N}
+
+    {color.R}- {color.GG}cobf {color.CC}"bbc" --mode encode --algo custom.cobf{color.N}
+      {color.B}› {color.WW}Expected output:{color.N}
+        {color.YY}- {color.GG}iN**?iN**?0'~`]{color.N}
+
+    {color.R}- {color.GG}cobf {color.CC}"jp~A1 iN**? 0'~\`]" --mode decode --algo custom.cobf{color.N}
+      {color.B}› {color.WW}Expected output:{color.N}
+        {color.YY}- {color.GG}a b c{color.N}
+
+    {color.R}- {color.GG}cobf {color.CC}test --mode encode --outfile encode.txt{color.N}
+    {color.R}- {color.GG}cobf {color.CC}--file encode.txt --mode decode{color.N}

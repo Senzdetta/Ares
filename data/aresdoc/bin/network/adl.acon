@@ -1,0 +1,14 @@
+{color.GG}Adl {color.N}downloads source code repositories and direct files from a wide range of supported services, including Git hosting platforms, self-hosted instances, and cloud file providers.
+
+Usage: {color.GG}adl {color.CC}<url> [--timeout <sec>] [--threads <value>] [--out <name>]{color.N}
+
+Example:
+    {color.R}- {color.GG}adl {color.CC}git.example.com/user/project.git{color.N}
+    {color.R}- {color.GG}adl {color.CC}github.com/user/project{color.N}
+    {color.R}- {color.GG}adl {color.CC}example.com/archive.tar.gz{color.N}
+    {color.R}- {color.GG}adl {color.CC}drive.google.com/file/d/xxxx/view?usp=drivesdk{color.N}
+    {color.R}- {color.GG}adl {color.CC}example.com/archive.tar.gz --out source.tar.gz{color.N}
+    {color.R}- {color.GG}adl {color.CC}git.example.com/user/project.git --threads 8 --timeout 60{color.N}
+
+{color.YY}Note{color.N}:
+    {color.R}- {color.WW}Some supported services may be automatically converted to direct-download URLs when required.{color.N}

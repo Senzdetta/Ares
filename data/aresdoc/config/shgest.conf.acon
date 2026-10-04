@@ -1,0 +1,50 @@
+{color.GG}shgest.conf {color.N}is the configuration file used by shgest to control suggestion sources, priorities, and display appearance.
+Only predefined keys are supported and should not be extended with custom entries.
+
+Available keys:
+    {color.R}- {color.GG}history           {color.N}= enable history suggestions
+    {color.R}- {color.GG}history_color     {color.N}= history suggestion color
+
+    {color.R}- {color.GG}alias             {color.N}= enable alias suggestions
+    {color.R}- {color.GG}alias_color       {color.N}= alias suggestion color
+
+    {color.R}- {color.GG}function          {color.N}= enable function suggestions
+    {color.R}- {color.GG}function_color    {color.N}= function suggestion color
+
+    {color.R}- {color.GG}builtin           {color.N}= enable builtin suggestions
+    {color.R}- {color.GG}builtin_color     {color.N}= builtin suggestion color
+
+    {color.R}- {color.GG}tool              {color.N}= enable executable suggestions
+    {color.R}- {color.GG}tool_color        {color.N}= executable suggestion color
+
+    {color.R}- {color.GG}variable          {color.N}= enable variable suggestions
+    {color.R}- {color.GG}variable_color    {color.N}= variable suggestion color
+
+    {color.R}- {color.GG}path              {color.N}= enable file and directory suggestions
+    {color.R}- {color.GG}path_color        {color.N}= file and directory suggestion color
+
+    {color.R}- {color.GG}cutter_symbol     {color.N}= truncation indicator
+    {color.R}- {color.GG}cutter_color      {color.N}= truncation indicator color
+
+    {color.R}- {color.GG}other_color       {color.N}= fallback suggestion color
+
+Priority:
+    {color.R}- {color.N}Sources defined earlier have higher priority than sources defined later.
+
+Example:
+    {color.R}- {color.PP}alias {color.WW}= {color.YY}true{color.N}
+    {color.R}- {color.PP}function {color.WW}= {color.YY}true{color.N}
+    {color.R}- {color.PP}tool {color.WW}= {color.YY}true{color.N}
+
+If the following entries exist:
+    {color.R}- {color.GG}alias {color.CC}test111{color.N}
+    {color.R}- {color.GG}function {color.CC}test222{color.N}
+    {color.R}- {color.GG}tool {color.CC}test333{color.N}
+
+When typing: {color.GG}test{color.N}
+The first suggestion will be: {color.GG}test111{color.N}
+Because alias appears before function and tool in {color.BB}shgest.conf{color.N}.
+
+Info:
+    {color.R}- {color.GG}cutter_symbol {color.N}is displayed when a suggestion is truncated.
+    {color.R}- {color.GG}other_color {color.N}is used for suggestion text that does not belong to a colored category.

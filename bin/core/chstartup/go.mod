@@ -3,7 +3,7 @@ module github.com/Zeronetsec/Ares/bin/core/chstartup
 go 1.27.0
 
 require (
-	github.com/Zeronetsec/Ares/lib/go/color v0.0.0-20260901171817-39b51423aaac
+	github.com/Zeronetsec/Ares/lib/go/color v0.0.0-20260905123903-8dc80c77e0aa
 	github.com/charmbracelet/bubbles v1.0.0
 	github.com/charmbracelet/bubbletea v1.3.10
 )

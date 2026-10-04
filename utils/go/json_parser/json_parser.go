@@ -5,28 +5,29 @@ package main
 import (
     "fmt"
     "os"
-    "path/filepath"
+    "embed"
+    "io/fs"
     "github.com/Zeronetsec/Ares/lib/go/color"
 )
 
+//go:embed metadata/*.json
+var metadataFS embed.FS
+
 func main() {
-    targetMetadata := os.Getenv("__aresroot__")
-    if targetMetadata == "" {
+    files, err := fs.Glob(metadataFS, "metadata/*.json")
+    if err != nil {
         fmt.Printf(
-            "%s[!] %sVariable: %s__aresroot__ %snot found!\n",
-            color.R, color.N, color.GG, color.N,
+            "%s[!] %sFailed to read embedded metadata: %s%v%s\n",
+            color.R, color.N, color.GG, err, color.N,
         )
         os.Exit(1)
     }
 
-    metadataPath := filepath.Join(
-        targetMetadata,
-        "metadata",
-        "*.json",
-    )
-
-    files, err := filepath.Glob(metadataPath)
-    if err != nil {
+    if len(files) == 0 {
+        fmt.Printf(
+            "%s[!] %sNo metadata files found in: %sembed.FS%s\n",
+            color.R, color.N, color.GG, color.N,
+        )
         return
     }
 

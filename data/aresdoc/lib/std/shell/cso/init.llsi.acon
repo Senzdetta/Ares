@@ -1,0 +1,51 @@
+{color.GG}lib::std::shell::cso::init {color.N}loads the {color.GG}Ares Framework {color.N}shared-library extensions required by advanced Bash scripts.
+It is intended for scripting use and should not be used directly in interactive shell sessions.
+
+Usage Example:
+{color.DG}#!/usr/bin/env bash{color.N}
+
+lib::std::shell::cso::init
+{color.BB}include {color.N}: {color.YY}'({color.N}
+    {color.YY}lib/std/shell/missing_argument{color.N}
+{color.YY})'{color.N}
+
+{color.R}name{color.GG}={color.YY}""{color.N}
+{color.PP}readonly {color.R}name{color.N}
+
+{color.PP}if {color.N}[[ {color.GG}-n {color.YY}"{color.R}${1}{color.YY}" {color.N}]]; {color.PP}then
+    {color.BB}unreadonlyv {color.N}: {color.YY}'({color.N}
+        {color.YY}name{color.N}
+    {color.YY})'{color.N}
+    {color.R}name{color.GG}={color.YY}"{color.R}${1}{color.YY}"{color.N}
+    {color.PP}readonly {color.R}name{color.N}
+{color.PP}else{color.N}
+    lib::std::shell::missing_argument {color.YY}"myscript"{color.N}
+    {color.B}exit {color.RO}1{color.N}
+{color.PP}fi{color.N}
+
+{color.B}echo {color.GG}-{color.N}e {color.YY}"my name is: {color.R}${name}{color.YY}"{color.N}
+lib::std::shell::cso::free {color.DG}# Usage: `aresdoc lib::std::shell::cso::free` to show documentation for lib::std::shell::cso::free{color.N}
+
+Available cso:
+    {color.R}- {color.GG}catchypr{color.N}
+    {color.R}- {color.GG}destroyf{color.N}
+    {color.R}- {color.GG}destroyso{color.N}
+    {color.R}- {color.GG}destroyv{color.N}
+    {color.R}- {color.GG}dynap{color.N}
+    {color.R}- {color.GG}dynav{color.N}
+    {color.R}- {color.GG}error{color.N}
+    {color.R}- {color.GG}include{color.N}
+    {color.R}- {color.GG}loadso{color.N}
+    {color.R}- {color.GG}rhome{color.N}
+    {color.R}- {color.GG}shmod{color.N}
+    {color.R}- {color.GG}unreadonlyf{color.N}
+    {color.R}- {color.GG}unreadonlyv{color.N}
+    {color.R}- {color.GG}llsi{color.N}
+    {color.R}- {color.GG}loadrc{color.N}
+    {color.R}- {color.GG}shgest{color.N}
+
+For more details:
+    {color.R}- {color.GG}aresdoc {color.CC}lib::std::shell::cso::<cso>{color.N}
+
+Example:
+    {color.R}- {color.GG}aresdoc {color.CC}lib::std::shell::cso::error{color.N}

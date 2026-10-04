@@ -1,0 +1,7 @@
+{color.GG}$__config__/acon.syntax {color.N}is the default syntax definition file for ACON.
+It contains the highlighting and mapping rules used to render formatted terminal output.
+
+Example syntax:
+{color.GG}// comment{color.N}
+{color.PP}if {color.N}keyword {color.GG}= {color.N}_( {color.GG}value {color.N})_
+{color.PP}if {color.N}key1, key2 {color.GG}= {color.N}_( {color.GG}value {color.N})_

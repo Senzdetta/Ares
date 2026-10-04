@@ -1,0 +1,10 @@
+{color.GG}$__config__/atop.conf {color.N}is the default configuration file for ATop.
+It controls the refresh interval and the maximum number of processes displayed.
+
+Example config:
+{color.DG}# comment{color.GG}
+{color.PP}refreshms {color.N}= {color.YY}1000{color.N}
+{color.PP}maxprocess {color.N}= {color.YY}50{color.N}
+
+Note:
+    {color.R}- {color.PP}maxprocess {color.N}= {color.YY}- {color.N}disables the process limit.

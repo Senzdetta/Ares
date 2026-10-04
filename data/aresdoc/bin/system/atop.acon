@@ -1,0 +1,24 @@
+{color.GG}ATop {color.N}is a lightweight TUI process viewer focused on displaying running processes without additional management features.
+
+Usage:
+    {color.R}- {color.GG}atop {color.CC}[--config <file>]{color.N}
+    {color.R}- {color.GG}atop {color.CC}[--refreshms <value>] [--maxprocess <value|->]{color.N}
+
+Example:
+    {color.R}- {color.GG}atop{color.N}
+    {color.R}- {color.GG}atop {color.CC}--config myconfig.conf{color.N}
+    {color.R}- {color.GG}atop {color.CC}--refreshms 500 --maxprocess 100{color.N}
+
+Config file example:
+{color.DG}# comment{color.N}
+{color.PP}refreshms {color.N}= {color.YY}500{color.N}
+{color.PP}maxprocess {color.N}= {color.YY}1000{color.N}
+
+{color.B}Info{color.N}:
+{color.WW}A value of {color.GG}- {color.WW}for the {color.GG}maxprocess {color.WW}option (in the config file or via the {color.GG}--maxprocess {color.WW}flag) means an {color.BB}unlimited {color.WW}number of processes.{color.N}
+
+Example:
+    {color.R}- {color.GG}atop {color.CC}--maxprocess -{color.N}
+
+Example (config file):
+{color.PP}maxprocess {color.N}= {color.YY}-{color.N}

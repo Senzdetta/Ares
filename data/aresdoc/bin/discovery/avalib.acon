@@ -1,0 +1,8 @@
+{color.GG}Avalib {color.N}lists available libraries grouped by their source directories, making it easier to discover and navigate framework and system libraries.
+
+Usage: {color.GG}avalib {color.CC}[--allpath] [--only <path>]{color.N}
+
+Example:
+    {color.R}- {color.GG}avalib{color.N}
+    {color.R}- {color.GG}avalib {color.CC}--only lib/std/shell{color.N}
+    {color.R}- {color.GG}avalib {color.CC}--allpath --only lib/std/go{color.N}

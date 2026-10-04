@@ -5,13 +5,22 @@ package main
 import (
     "fmt"
     "strconv"
+    "strings"
     "github.com/Zeronetsec/Ares/lib/go/color"
 )
 
 func (m model) View() string {
+    displayPath := m.configPath
+    if idx := strings.Index(
+        m.configPath,
+        "ares/",
+    ); idx != -1 {
+        displayPath = m.configPath[idx:]
+    }
+
     s := fmt.Sprintf(
         "%s[ (%s%s%s) ]%s\n",
-        color.DG, color.GG, m.configPath, color.DG, color.N,
+        color.DG, color.GG, displayPath, color.DG, color.N,
     ) + m.savedStatus + "\n"
 
     for i, item := range m.items {

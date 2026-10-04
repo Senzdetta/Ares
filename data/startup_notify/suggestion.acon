@@ -1,0 +1,13 @@
+{color.B}[*] {color.N}From: {color.GG}$__config__/startup.conf {color.DG}({color.PP}suggestion {color.WW}= {color.YY}true{color.DG}) {color.N}{
+    {color.YY}Warning{color.WW}: experimental features enabled!
+        {color.DG}* {color.WW}May cause visual inconsistencies.{color.N}
+        {color.DG}* {color.WW}Some visual glitches may occur.{color.N}
+        {color.DG}* {color.WW}Shortcuts bug and others.{color.N}
+
+    Tips:
+        {color.WW}To disable this warning, choose one of these methods:
+        {color.R}- {color.WW}Manually edit: {color.GG}$__config__/startup.conf {color.DG}({color.WW}change: {color.PP}suggestion {color.WW}to {color.YY}true --force{color.DG}){color.N}
+        {color.R}- {color.WW}Use: {color.GG}chstartup {color.WW}or {color.GG}openfile {color.CC}startup.conf {color.DG}({color.WW}change: {color.PP}suggestion {color.WW}to {color.YY}true --force{color.DG}){color.N}
+        {color.R}- {color.WW}Run command: {color.GG}setconf {color.CC}$__config__/startup.conf --key suggestion --value "true --force"{color.N}
+}
+{newline}

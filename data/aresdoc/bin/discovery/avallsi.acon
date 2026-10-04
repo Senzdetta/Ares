@@ -1,0 +1,9 @@
+{color.GG}AVALLSI {color.N}lists available LLSI modules, making it easier to discover registered and unregistered runtime modules.
+
+Usage: {color.GG}avallsi {color.CC}[--only <path>] [--fullscan]{color.N}
+
+Example:
+    {color.R}- {color.GG}avallsi{color.N}
+    {color.R}- {color.GG}avallsi {color.CC}--only lib/std/shell{color.N}
+    {color.R}- {color.GG}avallsi {color.CC}--fullscan{color.N}
+    {color.R}- {color.GG}avallsi {color.CC}--only lib/std/shell --fullscan{color.N}

@@ -1,0 +1,9 @@
+# https://github.com/Zeronetsec/Ares
+
+export PROMPT_COMMAND=(
+    'export exit_code=${?}'
+    'export LINENO'
+    'export PS1=$(command yumipr --render)'
+)
+
+# Copyright (c) 2026 Zeronetsec

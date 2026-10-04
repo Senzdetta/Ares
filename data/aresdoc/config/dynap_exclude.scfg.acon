@@ -1,0 +1,16 @@
+{color.GG}dynap_exclude.scfg {color.N}is the exclusion configuration used by dynap during startup.
+It prevents selected files or directories from being automatically included in the PATH environment variable.
+
+Example syntax:
+{color.DG}// comment{color.N}
+{color.YY}"mymodule" {color.PP}from {color.YY}"/bin/network"{color.N}
+
+Example:
+    {color.R}- {color.GG}$__aresroot__/bin/network/myip.py{color.N}
+    {color.R}- {color.GG}$__aresroot__/bin/network/mymodule/{color.N}
+
+The rule above prevents {color.GG}$__aresroot__/bin/network/mymodule {color.N}from being added to PATH.
+
+{color.YY}Note{color.N}:
+    {color.R}- {color.N}dynap reads this file once during startup.
+    {color.R}- {color.N}Direct-file rules are supported, but are generally not useful for PATH management.

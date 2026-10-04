@@ -3,23 +3,19 @@
 package main
 
 import (
-    "os"
     "fmt"
     "encoding/json"
     "github.com/Zeronetsec/Ares/lib/go/color"
 )
 
 func processFile(filePath string) {
-    fileData, err := os.ReadFile(filePath)
+    fileData, err := metadataFS.ReadFile(filePath)
     if err != nil {
         return
     }
 
     var data Metadata
-    if err := json.Unmarshal(
-        fileData,
-        &data,
-    ); err != nil {
+    if err := json.Unmarshal(fileData, &data); err != nil {
         return
     }
 

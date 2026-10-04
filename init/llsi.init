@@ -1,8 +1,14 @@
+// https://github.com/Zeronetsec/Ares
+
 init::llsi {
-    reload.shell -> init/llsi/reload_shell.llsi
+    reloadshell -> init/llsi/reloadshell.llsi
+    help -> init/llsi/help.llsi
+    sigtrap -> init/llsi/sigtrap.llsi
 }
 
-lib::shell::libso {
-    runtime.init -> lib/shell/libso/init.llsi
-    runtime.free -> lib/shell/libso/free.llsi
+lib::std::shell::cso {
+    runtime.init -> lib/std/shell/cso/init.llsi
+    runtime.free -> lib/std/shell/cso/free.llsi
 }
+
+// Copyright (c) 2026 Zeronetsec

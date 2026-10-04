@@ -1,0 +1,11 @@
+{color.GG}$__config__/cobf_algorithms.cobf {color.N}is the default obfuscation mapping file used by Cobf.
+It defines the character substitution rules used during encoding and decoding operations.
+
+Example syntax:
+{color.DG}// comment{color.N}
+a {color.GG}-> {color.BB}jp~A1{color.N}
+b {color.GG}-> {color.BB}iN**?{color.N}
+c {color.GG}-> {color.BB}0'~`]{color.N}
+
+Note:
+    {color.R}- {color.N}Custom mapping files can be supplied through Cobf using the {color.CC}--algo {color.N}option.

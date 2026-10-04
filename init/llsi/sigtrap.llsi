@@ -1,0 +1,6 @@
+# https://github.com/Zeronetsec/Ares
+
+trap 'printf "\x1b[0m"' DEBUG
+trap 'printf "\x1b[0m\x1b[?25h"' EXIT
+
+# Copyright (c) 2026 Zeronetsec
