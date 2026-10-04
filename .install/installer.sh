@@ -1,4 +1,5 @@
 function install::installer() {
+    install::extern::patching
     install::extern::compile
     install::extern::removeExt
     install::extern::setShebang
