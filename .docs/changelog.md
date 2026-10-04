@@ -66,3 +66,10 @@
    the corresponding files on disk are empty both before and after booting.
    Removed 'errexit' so that the boot process continues even if an error occurs.
 ```
+
+### 2026-10-04
+```text
+1. Re-initialized the Go component and updated the dependency from `lib/go` to `lib/std/go`.
+
+2. Moved `utils/go/cnf_handler` to `bin/core/cnf` and updated `init/engine/cnf/cnf_handler.shx` accordingly.
+```
