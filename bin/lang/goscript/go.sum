@@ -1,0 +1,4 @@
+github.com/Senzdetta/Ares/lib/std/go/color v0.0.0-20261004122909-be2d9c1a276c h1:QNt8Kyw1euanD3JFdSsY4Dd2ovRtOx+M03npvLoCeck=
+github.com/Senzdetta/Ares/lib/std/go/color v0.0.0-20261004122909-be2d9c1a276c/go.mod h1:+dJIiDp8olDhpRVwj8mEXAQZ9cfZqSme4e0pOytBMdA=
+github.com/Senzdetta/Ares/lib/std/go/missing_argument v0.0.0-20261004122909-be2d9c1a276c h1:E7251dnUJtEqe2my5m1OZkOta/bZtPRvh9lbF9lgCIk=
+github.com/Senzdetta/Ares/lib/std/go/missing_argument v0.0.0-20261004122909-be2d9c1a276c/go.mod h1:Pt6z0rooXh2M1R6edJPa6LxeaMgJWuEDnBE5djI282U=
