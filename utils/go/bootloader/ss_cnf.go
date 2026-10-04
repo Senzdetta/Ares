@@ -14,11 +14,11 @@ func SScnf() {
             `
                 builtin unreadonlyf : '(
                     command_not_found_handle
-                )' || true
+                )' 2>/dev/null || true
 
                 builtin destroyf : '(
                     command_not_found_handle
-                )' || true
+                )' 2>/dev/null || true
             `,
         )
 
