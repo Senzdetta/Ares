@@ -4,7 +4,7 @@ package invalid_option
 
 import (
     "fmt"
-    "github.com/Zeronetsec/Ares/lib/go/color"
+    "github.com/Zeronetsec/Ares/lib/std/go/color"
 )
 
 func Execute(args, command string) {

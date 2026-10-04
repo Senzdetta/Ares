@@ -6,7 +6,7 @@ import (
     "fmt"
     "strconv"
     "strings"
-    "github.com/Zeronetsec/Ares/lib/go/color"
+    "github.com/Zeronetsec/Ares/lib/std/go/color"
 )
 
 func (m model) View() string {

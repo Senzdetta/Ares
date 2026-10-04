@@ -5,7 +5,7 @@ package main
 import (
     "os"
     "strings"
-    "github.com/Zeronetsec/Ares/lib/go/missing_argument"
+    "github.com/Zeronetsec/Ares/lib/std/go/missing_argument"
 )
 
 func parseArgs(args []string) Config {

@@ -8,9 +8,9 @@ import (
     "os"
     "os/exec"
     "path/filepath"
-    "github.com/Zeronetsec/Ares/lib/go/color"
-    "github.com/Zeronetsec/Ares/lib/go/missing_argument"
-    "github.com/Zeronetsec/Ares/lib/go/invalid_option"
+    "github.com/Zeronetsec/Ares/lib/std/go/color"
+    "github.com/Zeronetsec/Ares/lib/std/go/missing_argument"
+    "github.com/Zeronetsec/Ares/lib/std/go/invalid_option"
 )
 
 func main() {

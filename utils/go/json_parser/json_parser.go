@@ -7,7 +7,7 @@ import (
     "os"
     "embed"
     "io/fs"
-    "github.com/Zeronetsec/Ares/lib/go/color"
+    "github.com/Zeronetsec/Ares/lib/std/go/color"
 )
 
 //go:embed metadata/*.json

@@ -6,8 +6,8 @@ import (
     "fmt"
     "os"
     "strings"
-    "github.com/Zeronetsec/Ares/lib/go/color"
-    "github.com/Zeronetsec/Ares/lib/go/missing_argument"
+    "github.com/Zeronetsec/Ares/lib/std/go/color"
+    "github.com/Zeronetsec/Ares/lib/std/go/missing_argument"
 )
 
 func main() {

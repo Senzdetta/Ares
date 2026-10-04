@@ -6,7 +6,7 @@ import (
     "fmt"
     "os"
     "github.com/charmbracelet/bubbles/textinput"
-    "github.com/Zeronetsec/Ares/lib/go/color"
+    "github.com/Zeronetsec/Ares/lib/std/go/color"
     tea "github.com/charmbracelet/bubbletea"
 )
 

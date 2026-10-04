@@ -5,7 +5,7 @@ package main
 import (
     "os"
     "fmt"
-    "github.com/Zeronetsec/Ares/lib/go/color"
+    "github.com/Zeronetsec/Ares/lib/std/go/color"
 )
 
 func BSgen() {

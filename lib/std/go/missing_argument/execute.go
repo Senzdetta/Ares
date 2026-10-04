@@ -4,7 +4,7 @@ package missing_argument
 
 import (
     "fmt"
-    "github.com/Zeronetsec/Ares/lib/go/color"
+    "github.com/Zeronetsec/Ares/lib/std/go/color"
 )
 
 func Execute(command string) {

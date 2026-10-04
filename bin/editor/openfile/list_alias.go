@@ -7,7 +7,7 @@ import (
     "fmt"
     "bufio"
     "strings"
-    "github.com/Zeronetsec/Ares/lib/go/color"
+    "github.com/Zeronetsec/Ares/lib/std/go/color"
 )
 
 func listAlias(configPath string) {

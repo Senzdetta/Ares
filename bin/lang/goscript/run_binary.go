@@ -6,7 +6,7 @@ import (
     "syscall"
     "os"
     "fmt"
-    "github.com/Zeronetsec/Ares/lib/go/color"
+    "github.com/Zeronetsec/Ares/lib/std/go/color"
 )
 
 func runBinary(cfg Config, binaryCache string) {

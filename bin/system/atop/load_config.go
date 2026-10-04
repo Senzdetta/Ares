@@ -7,7 +7,7 @@ import (
     "fmt"
     "strconv"
     "path/filepath"
-    "github.com/Zeronetsec/Ares/lib/go/color"
+    "github.com/Zeronetsec/Ares/lib/std/go/color"
 )
 
 func loadConfig() Config {

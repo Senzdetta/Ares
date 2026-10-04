@@ -10,7 +10,7 @@ import (
     "crypto/md5"
     "os/exec"
     "path/filepath"
-    "github.com/Zeronetsec/Ares/lib/go/color"
+    "github.com/Zeronetsec/Ares/lib/std/go/color"
 )
 
 func buildScript(cfg Config) string {

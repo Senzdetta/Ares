@@ -8,7 +8,7 @@ import (
     "strconv"
     "time"
     "github.com/gdamore/tcell/v2"
-    "github.com/Zeronetsec/Ares/lib/go/color"
+    "github.com/Zeronetsec/Ares/lib/std/go/color"
 )
 
 func main() {

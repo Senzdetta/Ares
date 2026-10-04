@@ -9,7 +9,7 @@ import (
     "encoding/base64"
     "crypto/rand"
     "path/filepath"
-    "github.com/Zeronetsec/Ares/lib/go/color"
+    "github.com/Zeronetsec/Ares/lib/std/go/color"
 )
 
 func exportBinary(cfg Config, binaryCache string) {
