@@ -41,7 +41,6 @@ include : '(
     .install/extern/xcolor
     .install/extern/compile
     .install/extern/remove_ext
-    # .install/extern/linux_check
     .install/extern/patch_bash_header
     .install/extern/set_shebang
     .install/extern/hashing
