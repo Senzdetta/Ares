@@ -21,7 +21,7 @@ function install::extern::compile() {
             "${type}" == "cso" && \
             "${has_checked_linux}" == false
         ]]; then
-            install::extern::linuxCheck
+            install::extern::patching
             has_checked_linux=true
         fi
 
