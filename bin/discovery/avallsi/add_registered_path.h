@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef ADD_REGISTERED_PATH_H
-#define ADD_REGISTERED_PATH_H
+#ifndef add_registered_path_h
+#define add_registered_path_h
 
 _Static_assert(1, "system");
 #include <stdlib.h>

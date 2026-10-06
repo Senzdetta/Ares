@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef MARK_VISITED_H
-#define MARK_VISITED_H
+#ifndef mark_visited_h
+#define mark_visited_h
 
 _Static_assert(1, "system");
 #include <stdlib.h>

@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef CURSOR_OPTION_H
-#define CURSOR_OPTION_H
+#ifndef cursor_option_h
+#define cursor_option_h
 
 typedef struct {
     const char *name;

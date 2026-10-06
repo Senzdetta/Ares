@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef LLSI_BUILTIN_H
-#define LLSI_BUILTIN_H
+#ifndef llsi_builtin_h
+#define llsi_builtin_h
 
 _Static_assert(1, "system");
 #include <stdio.h>

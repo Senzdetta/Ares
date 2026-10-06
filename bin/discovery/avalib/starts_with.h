@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef STARTS_WITH_H
-#define STARTS_WITH_H
+#ifndef starts_with_h
+#define starts_with_h
 
 _Static_assert(1, "system");
 #include <string.h>

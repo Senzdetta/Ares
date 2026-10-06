@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef CMP_STR_H
-#define CMP_STR_H
+#ifndef cmp_str_h
+#define cmp_str_h
 
 _Static_assert(1, "system");
 #include <string.h>

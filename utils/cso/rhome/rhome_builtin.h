@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef RHOME_BUILTIN_H
-#define RHOME_BUILTIN_H
+#ifndef rhome_builtin_h
+#define rhome_builtin_h
 
 _Static_assert(1, "system");
 #include <stdio.h>

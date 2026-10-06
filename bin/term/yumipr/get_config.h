@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef GET_CONFIG_H
-#define GET_CONFIG_H
+#ifndef get_config_h
+#define get_config_h
 
 _Static_assert(1, "system");
 #include <stdio.h>

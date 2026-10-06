@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef PARSE_ARGS_H
-#define PARSE_ARGS_H
+#ifndef parse_args_h
+#define parse_args_h
 
 _Static_assert(1, "system");
 #include <string.h>

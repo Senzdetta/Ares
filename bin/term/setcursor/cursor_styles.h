@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef CURSOR_STYLES_H
-#define CURSOR_STYLES_H
+#ifndef cursor_styles_h
+#define cursor_styles_h
 
 _Static_assert(1, "system");
 #include <stddef.h>

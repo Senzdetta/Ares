@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef STRIP_NEWLINE_H
-#define STRIP_NEWLINE_H
+#ifndef strip_newline_h
+#define strip_newline_h
 
 _Static_assert(1, "system");
 #include <string.h>

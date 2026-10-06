@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef PROCESS_TARGET_PATH_H
-#define PROCESS_TARGET_PATH_H
+#ifndef process_target_path_h
+#define process_target_path_h
 
 _Static_assert(1, "system");
 #include <stdio.h>

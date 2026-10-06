@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef SCAN_RECURSIVE_H
-#define SCAN_RECURSIVE_H
+#ifndef scan_recursive_h
+#define scan_recursive_h
 
 _Static_assert(1, "system");
 #include <stdio.h>

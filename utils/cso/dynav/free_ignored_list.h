@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef FREE_IGNORED_LIST_H
-#define FREE_IGNORED_LIST_H
+#ifndef free_ignored_list_h
+#define free_ignored_list_h
 
 _Static_assert(1, "system");
 #include <stdlib.h>

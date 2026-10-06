@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef LOAD_SYNTAX_H
-#define LOAD_SYNTAX_H
+#ifndef load_syntax_h
+#define load_syntax_h
 
 _Static_assert(1, "system");
 #include <stdio.h>

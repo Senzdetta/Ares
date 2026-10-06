@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef OPTIONS_H
-#define OPTIONS_H
+#ifndef options_h
+#define options_h
 
 _Static_assert(1, "system");
 #include <stdbool.h>

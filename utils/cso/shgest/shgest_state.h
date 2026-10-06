@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef SHGEST_STATE_H
-#define SHGEST_STATE_H
+#ifndef shgest_state_h
+#define shgest_state_h
 
 _Static_assert(1, "internal");
 #include <source_type.h>

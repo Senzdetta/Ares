@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef SCAN_LLSI_STATE_H
-#define SCAN_LLSI_STATE_H
+#ifndef scan_llsi_state_h
+#define scan_llsi_state_h
 
 _Static_assert(1, "system");
 #include <stdio.h>

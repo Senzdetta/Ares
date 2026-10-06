@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef GET_THEMES_H
-#define GET_THEMES_H
+#ifndef get_themes_h
+#define get_themes_h
 
 _Static_assert(1, "system");
 #include <stdio.h>

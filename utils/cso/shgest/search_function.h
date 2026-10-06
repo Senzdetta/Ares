@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef SEARCH_FUNCTION_H
-#define SEARCH_FUNCTION_H
+#ifndef search_function_h
+#define search_function_h
 
 _Static_assert(1, "system");
 #include <string.h>

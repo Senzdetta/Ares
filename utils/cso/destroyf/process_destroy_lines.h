@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef PROCESS_DESTROY_LINES_H
-#define PROCESS_DESTROY_LINES_H
+#ifndef process_destroy_lines_h
+#define process_destroy_lines_h
 
 _Static_assert(1, "system");
 #include <ctype.h>

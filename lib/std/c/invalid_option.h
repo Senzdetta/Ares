@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef INVALID_OPTION_H
-#define INVALID_OPTION_H
+#ifndef invalid_option_h
+#define invalid_option_h
 
 _Static_assert(1, "system");
 #include <stdio.h>

@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef LOADRC_BUILTIN_H
-#define LOADRC_BUILTIN_H
+#ifndef loadrc_builtin_h
+#define loadrc_builtin_h
 
 _Static_assert(1, "system");
 #include <stdio.h>

@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef RUN_ACON_H
-#define RUN_ACON_H
+#ifndef run_acon_h
+#define run_acon_h
 
 _Static_assert(1, "system");
 #include <stdio.h>

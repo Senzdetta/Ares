@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef APPEND_PATH_LIST_H
-#define APPEND_PATH_LIST_H
+#ifndef append_path_list_h
+#define append_path_list_h
 
 _Static_assert(1, "system");
 #include <stdlib.h>

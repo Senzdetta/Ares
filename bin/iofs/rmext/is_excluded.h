@@ -1,8 +1,9 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef IS_EXCLUDED_H
-#define IS_EXCLUDED_H
+#ifndef is_excluded_h
+#define is_excluded_h
 
+_Static_assert(1, "system");
 #include <string.h>
 #include <limits.h>
 

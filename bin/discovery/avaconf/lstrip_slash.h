@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef LSTRIP_SLASH_H
-#define LSTRIP_SLASH_H
+#ifndef lstrip_slash_h
+#define lstrip_slash_h
 
 _Static_assert(1, "system");
 #include <string.h>

@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef GET_FORMATTED_PATH_H
-#define GET_FORMATTED_PATH_H
+#ifndef get_formatted_path_h
+#define get_formatted_path_h
 
 _Static_assert(1, "system");
 #include <stdio.h>

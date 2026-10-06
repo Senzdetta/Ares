@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef RENDER_H
-#define RENDER_H
+#ifndef render_h
+#define render_h
 
 _Static_assert(1, "system");
 #include <stdio.h>

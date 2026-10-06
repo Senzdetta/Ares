@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef MSG_H
-#define MSG_H
+#ifndef msg_h
+#define msg_h
 
 _Static_assert(1, "system");
 #include <stdio.h>

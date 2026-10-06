@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef PARSE_MODES_H
-#define PARSE_MODES_H
+#ifndef parse_modes_h
+#define parse_modes_h
 
 _Static_assert(1, "system");
 #include <stdlib.h>

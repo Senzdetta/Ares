@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef GET_TARGET_MODE_H
-#define GET_TARGET_MODE_H
+#ifndef get_target_mode_h
+#define get_target_mode_h
 
 _Static_assert(1, "system");
 #include <stdbool.h>

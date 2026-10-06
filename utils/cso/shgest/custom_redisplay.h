@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef CUSTOM_REDISPLAY_H
-#define CUSTOM_REDISPLAY_H
+#ifndef custom_redisplay_h
+#define custom_redisplay_h
 
 _Static_assert(1, "system");
 #include <string.h>

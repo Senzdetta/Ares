@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef SEARCH_HISTORY_H
-#define SEARCH_HISTORY_H
+#ifndef search_history_h
+#define search_history_h
 
 _Static_assert(1, "system");
 #include <string.h>

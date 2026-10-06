@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef TRIM_SPACE_H
-#define TRIM_SPACE_H
+#ifndef trim_space_h
+#define trim_space_h
 
 _Static_assert(1, "system");
 #include <ctype.h>

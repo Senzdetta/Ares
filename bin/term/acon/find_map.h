@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef FIND_MAP_H
-#define FIND_MAP_H
+#ifndef find_map_h
+#define find_map_h
 
 _Static_assert(1, "system");
 #include <string.h>

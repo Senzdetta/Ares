@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef DYNAP_BUILTIN_H
-#define DYNAP_BUILTIN_H
+#ifndef dynap_builtin_h
+#define dynap_builtin_h
 
 _Static_assert(1, "system");
 #include <stdio.h>

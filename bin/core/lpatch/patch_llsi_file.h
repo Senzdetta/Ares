@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef PATCH_LLSI_FILE_H
-#define PATCH_LLSI_FILE_H
+#ifndef patch_llsi_file_h
+#define patch_llsi_file_h
 
 _Static_assert(1, "system");
 #include <stdio.h>

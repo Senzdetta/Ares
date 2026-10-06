@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef SHGEST_BUILTIN_H
-#define SHGEST_BUILTIN_H
+#ifndef shgest_builtin_h
+#define shgest_builtin_h
 
 _Static_assert(1, "internal");
 #include <load_config.h>

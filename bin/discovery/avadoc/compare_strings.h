@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef COMPARE_STRINGS_H
-#define COMPARE_STRINGS_H
+#ifndef compare_strings_h
+#define compare_strings_h
 
 _Static_assert(1, "system");
 #include <string.h>

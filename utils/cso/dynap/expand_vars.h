@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef EXPAND_VARS_H
-#define EXPAND_VARS_H
+#ifndef expand_vars_h
+#define expand_vars_h
 
 _Static_assert(1, "system");
 #include <string.h>

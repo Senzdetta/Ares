@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef UNLINK_CB_H
-#define UNLINK_CB_H
+#ifndef unlink_cb_h
+#define unlink_cb_h
 
 #define _XOPEN_SOURCE 500
 

@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef DOWNLOAD_GDRIVE_H
-#define DOWNLOAD_GDRIVE_H
+#ifndef download_gdrive_h
+#define download_gdrive_h
 
 _Static_assert(1, "system");
 #include <stdio.h>

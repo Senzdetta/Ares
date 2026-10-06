@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef GET_TIME_SYMBOL_H
-#define GET_TIME_SYMBOL_H
+#ifndef get_time_symbol_h
+#define get_time_symbol_h
 
 _Static_assert(1, "system");
 #include <time.h>

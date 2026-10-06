@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef UNREADONLYV_BUILTIN_H
-#define UNREADONLYV_BUILTIN_H
+#ifndef unreadonlyv_builtin_h
+#define unreadonlyv_builtin_h
 
 _Static_assert(1, "system");
 #include <stdlib.h>

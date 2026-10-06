@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef IS_IGNORED_FOLDER_H
-#define IS_IGNORED_FOLDER_H
+#ifndef is_ignored_folder_h
+#define is_ignored_folder_h
 
 _Static_assert(1, "system");
 #include <string.h>

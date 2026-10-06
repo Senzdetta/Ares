@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef IS_EMPTY_LINE_H
-#define IS_EMPTY_LINE_H
+#ifndef is_empty_line_h
+#define is_empty_line_h
 
 _Static_assert(1, "system");
 #include <stdbool.h>

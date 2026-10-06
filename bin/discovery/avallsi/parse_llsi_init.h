@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef PARSE_LLSI_INIT_H
-#define PARSE_LLSI_INIT_H
+#ifndef parse_llsi_init_h
+#define parse_llsi_init_h
 
 _Static_assert(1, "system");
 #include <stdio.h>

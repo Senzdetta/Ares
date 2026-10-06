@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef ENABLE_SINGLE_SO_H
-#define ENABLE_SINGLE_SO_H
+#ifndef enable_single_so_h
+#define enable_single_so_h
 
 _Static_assert(1, "system");
 #include <stdio.h>

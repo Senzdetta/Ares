@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef ADD_LINE_H
-#define ADD_LINE_H
+#ifndef add_line_h
+#define add_line_h
 
 _Static_assert(1, "system");
 #include <stdlib.h>

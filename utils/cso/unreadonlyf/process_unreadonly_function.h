@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef PROCESS_UNREADONLY_FUNCTION_H
-#define PROCESS_UNREADONLY_FUNCTION_H
+#ifndef process_unreadonly_function_h
+#define process_unreadonly_function_h
 
 extern void builtin_error(const char *format, ...);
 

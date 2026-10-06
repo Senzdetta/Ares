@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef EXCLUDE_LIST_H
-#define EXCLUDE_LIST_H
+#ifndef exclude_list_h
+#define exclude_list_h
 
 _Static_assert(1, "system");
 #include <stddef.h>

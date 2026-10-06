@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef UNESCAPE_STR_H
-#define UNESCAPE_STR_H
+#ifndef unescape_str_h
+#define unescape_str_h
 
 _Static_assert(1, "system");
 #include <stdlib.h>

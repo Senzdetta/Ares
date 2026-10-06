@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef BUILD_FILE_CMD_H
-#define BUILD_FILE_CMD_H
+#ifndef build_file_cmd_h
+#define build_file_cmd_h
 
 _Static_assert(1, "system");
 #include <stdio.h>

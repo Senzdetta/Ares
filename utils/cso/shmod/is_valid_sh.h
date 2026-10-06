@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef IS_VALID_SH_H
-#define IS_VALID_SH_H
+#ifndef is_valid_sh_h
+#define is_valid_sh_h
 
 _Static_assert(1, "system");
 #include <stdio.h>

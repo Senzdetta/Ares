@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef GET_PATH_COLOR_H
-#define GET_PATH_COLOR_H
+#ifndef get_path_color_h
+#define get_path_color_h
 
 _Static_assert(1, "system");
 #include <string.h>

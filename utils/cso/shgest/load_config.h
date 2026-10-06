@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef LOAD_CONFIG_H
-#define LOAD_CONFIG_H
+#ifndef load_config_h
+#define load_config_h
 
 _Static_assert(1, "system");
 #include <stdlib.h>

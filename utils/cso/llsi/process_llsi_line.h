@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef PROCESS_LLSI_LINE_H
-#define PROCESS_LLSI_LINE_H
+#ifndef process_llsi_line_h
+#define process_llsi_line_h
 
 _Static_assert(1, "system");
 #include <stdio.h>

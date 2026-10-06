@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef MKDIR_P_H
-#define MKDIR_P_H
+#ifndef mkdir_p_h
+#define mkdir_p_h
 
 _Static_assert(1, "system");
 #include <stdio.h>

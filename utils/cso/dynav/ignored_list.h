@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef IGNORED_LIST_H
-#define IGNORED_LIST_H
+#ifndef ignored_list_h
+#define ignored_list_h
 
 typedef struct {
     char **items;

@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef EXPAND_ENV_H
-#define EXPAND_ENV_H
+#ifndef expand_env_h
+#define expand_env_h
 
 _Static_assert(1, "system");
 #include <stdlib.h>

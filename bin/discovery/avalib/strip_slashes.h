@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef STRIP_SLASHES_H
-#define STRIP_SLASHES_H
+#ifndef strip_slashes_h
+#define strip_slashes_h
 
 _Static_assert(1, "internal");
 #include <rstrip_slash.h>

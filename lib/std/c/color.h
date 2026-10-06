@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef COLOR_H
-#define COLOR_H
+#ifndef color_h
+#define color_h
 
 #define color_N "\x1b[0m"
 #define color_R "\x1b[1;31m"

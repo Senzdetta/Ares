@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef CLONE_GIT_H
-#define CLONE_GIT_H
+#ifndef clone_git_h
+#define clone_git_h
 
 _Static_assert(1, "system");
 #include <stdio.h>

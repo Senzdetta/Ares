@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef HAS_VALID_CONTENT_H
-#define HAS_VALID_CONTENT_H
+#ifndef has_valid_content_h
+#define has_valid_content_h
 
 _Static_assert(1, "system");
 #include <stdio.h>

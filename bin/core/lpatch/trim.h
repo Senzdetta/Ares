@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef TRIM_H
-#define TRIM_H
+#ifndef trim_h
+#define trim_h
 
 _Static_assert(1, "system");
 #include <string.h>

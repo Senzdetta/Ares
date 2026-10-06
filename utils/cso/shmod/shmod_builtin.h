@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef SHMOD_BUILTIN_H
-#define SHMOD_BUILTIN_H
+#ifndef shmod_builtin_h
+#define shmod_builtin_h
 
 _Static_assert(1, "system");
 #include <stdio.h>

@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef IS_LIBRARY_FILE_H
-#define IS_LIBRARY_FILE_H
+#ifndef is_library_file_h
+#define is_library_file_h
 
 _Static_assert(1, "system");
 #include <string.h>

@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef IS_VISITED_H
-#define IS_VISITED_H
+#ifndef is_visited_h
+#define is_visited_h
 
 _Static_assert(1, "system");
 #include <stdbool.h>

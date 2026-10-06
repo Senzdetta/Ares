@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef LOADSO_BUILTIN_H
-#define LOADSO_BUILTIN_H
+#ifndef loadso_builtin_h
+#define loadso_builtin_h
 
 _Static_assert(1, "system");
 #include <stdio.h>

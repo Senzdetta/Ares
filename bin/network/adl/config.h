@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef CONFIG_H
-#define CONFIG_H
+#ifndef config_h
+#define config_h
 
 typedef struct {
     const char *url;

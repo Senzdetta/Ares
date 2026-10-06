@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef CONTAINS_H
-#define CONTAINS_H
+#ifndef contains_h
+#define contains_h
 
 _Static_assert(1, "system");
 #include <stdbool.h>

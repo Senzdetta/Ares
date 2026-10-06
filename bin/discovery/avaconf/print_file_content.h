@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef PRINT_FILE_CONTENT_H
-#define PRINT_FILE_CONTENT_H
+#ifndef print_file_content_h
+#define print_file_content_h
 
 _Static_assert(1, "system");
 #include <stdio.h>

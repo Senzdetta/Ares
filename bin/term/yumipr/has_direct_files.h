@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef HAS_DIRECT_FILES_H
-#define HAS_DIRECT_FILES_H
+#ifndef has_direct_files_h
+#define has_direct_files_h
 
 _Static_assert(1, "system");
 #include <stdio.h>

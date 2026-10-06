@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef PRINT_UNESCAPED_H
-#define PRINT_UNESCAPED_H
+#ifndef print_unescaped_h
+#define print_unescaped_h
 
 _Static_assert(1, "system");
 #include <stdio.h>

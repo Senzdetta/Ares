@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef MAP_ENTRY_H
-#define MAP_ENTRY_H
+#ifndef map_entry_h
+#define map_entry_h
 
 _Static_assert(1, "system");
 #include <stdio.h>

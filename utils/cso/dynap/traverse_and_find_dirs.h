@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef TRAVERSE_AND_FIND_DIRS_H
-#define TRAVERSE_AND_FIND_DIRS_H
+#ifndef traverse_and_find_dirs_h
+#define traverse_and_find_dirs_h
 
 _Static_assert(1, "system");
 #include <stdio.h>

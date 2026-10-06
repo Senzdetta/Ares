@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef VALIDATE_INPUT_H
-#define VALIDATE_INPUT_H
+#ifndef validate_input_h
+#define validate_input_h
 
 _Static_assert(1, "system");
 #include <string.h>

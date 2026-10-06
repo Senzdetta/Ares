@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef PATH_CONTAINS_H
-#define PATH_CONTAINS_H
+#ifndef path_contains_h
+#define path_contains_h
 
 _Static_assert(1, "system");
 #include <string.h>

@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef ADD_EXCLUDE_RULE_H
-#define ADD_EXCLUDE_RULE_H
+#ifndef add_exclude_rule_h
+#define add_exclude_rule_h
 
 _Static_assert(1, "system");
 #include <stdio.h>

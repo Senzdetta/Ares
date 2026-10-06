@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef GET_VISIBLE_WIDTH_H
-#define GET_VISIBLE_WIDTH_H
+#ifndef get_visible_width_h
+#define get_visible_width_h
 
 _Static_assert(1, "system");
 #include <locale.h>

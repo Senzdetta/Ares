@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef READ_FILE_TO_ARRAY_H
-#define READ_FILE_TO_ARRAY_H
+#ifndef read_file_to_array_h
+#define read_file_to_array_h
 
 _Static_assert(1, "system");
 #include <stdio.h>

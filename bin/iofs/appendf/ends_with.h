@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef ENDS_WITH_H
-#define ENDS_WITH_H
+#ifndef ends_with_h
+#define ends_with_h
 
 _Static_assert(1, "system");
 #include <stdbool.h>

@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef IS_LINE_COMMENTED_H
-#define IS_LINE_COMMENTED_H
+#ifndef is_line_commented_h
+#define is_line_commented_h
 
 _Static_assert(1, "system");
 #include <ctype.h>

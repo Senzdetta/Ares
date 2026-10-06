@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef REMOVE_RECURSIVE_H
-#define REMOVE_RECURSIVE_H
+#ifndef remove_recursive_h
+#define remove_recursive_h
 
 #define _XOPEN_SOURCE 500
 

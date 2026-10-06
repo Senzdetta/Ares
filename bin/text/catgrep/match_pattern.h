@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef MATCH_PATTERN_H
-#define MATCH_PATTERN_H
+#ifndef match_pattern_h
+#define match_pattern_h
 
 _Static_assert(1, "system");
 #include <stdbool.h>

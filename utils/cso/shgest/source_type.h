@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef SHGEST_TYPES_H
-#define SHGEST_TYPES_H
+#ifndef shgest_types_h
+#define shgest_types_h
 
 typedef enum {
     SRC_PATH,

@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef PRINT_COLORED_SUFFIX_H
-#define PRINT_COLORED_SUFFIX_H
+#ifndef print_colored_suffix_h
+#define print_colored_suffix_h
 
 _Static_assert(1, "system");
 #include <ctype.h>

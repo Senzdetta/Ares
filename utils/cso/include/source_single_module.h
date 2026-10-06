@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef SOURCE_SINGLE_MODULE_H
-#define SOURCE_SINGLE_MODULE_H
+#ifndef source_single_module_h
+#define source_single_module_h
 
 _Static_assert(1, "system");
 #include <stdio.h>

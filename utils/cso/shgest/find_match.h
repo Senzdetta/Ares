@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef FIND_MATCH_H
-#define FIND_MATCH_H
+#ifndef find_match_h
+#define find_match_h
 
 _Static_assert(1, "internal");
 #include <shgest_state.h>

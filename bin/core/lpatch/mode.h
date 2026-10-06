@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef MODE_H
-#define MODE_H
+#ifndef mode_h
+#define mode_h
 
 typedef enum {
     MODE_NONE,

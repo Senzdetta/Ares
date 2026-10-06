@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef STRING_BUFFER_H
-#define STRING_BUFFER_H
+#ifndef string_buffer_h
+#define string_buffer_h
 
 typedef struct {
     char *str;

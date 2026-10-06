@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef SCAN_AND_SOURCE_H
-#define SCAN_AND_SOURCE_H
+#ifndef scan_and_source_h
+#define scan_and_source_h
 
 _Static_assert(1, "system");
 #include <stdio.h>

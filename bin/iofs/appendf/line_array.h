@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef LINE_ARRAY_H
-#define LINE_ARRAY_H
+#ifndef line_array_h
+#define line_array_h
 
 _Static_assert(1, "system");
 #include <stddef.h>

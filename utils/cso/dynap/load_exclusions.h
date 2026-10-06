@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef LOAD_EXCLUSIONS_H
-#define LOAD_EXCLUSIONS_H
+#ifndef load_exclusions_h
+#define load_exclusions_h
 
 _Static_assert(1, "system");
 #include <stdio.h>

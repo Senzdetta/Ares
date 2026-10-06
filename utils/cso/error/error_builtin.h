@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef ERROR_BUILTIN_H
-#define ERROR_BUILTIN_H
+#ifndef error_builtin_h
+#define error_builtin_h
 
 _Static_assert(1, "system");
 #include <stdio.h>

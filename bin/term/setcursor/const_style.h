@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef CONST_STYLE_H
-#define CONST_STYLE_H
+#ifndef const_style_h
+#define const_style_h
 
 #define STYLE_DEFAULT "\x1b[0 q"
 #define STYLE_BLINK_BLOCK "\x1b[1 q"

@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef FORMAT_SIGNAL_STRING_H
-#define FORMAT_SIGNAL_STRING_H
+#ifndef format_signal_string_h
+#define format_signal_string_h
 
 _Static_assert(1, "system");
 #include <stdio.h>

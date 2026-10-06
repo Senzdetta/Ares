@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef DESTROYSO_BUILTIN_H
-#define DESTROYSO_BUILTIN_H
+#ifndef destroyso_builtin_h
+#define destroyso_builtin_h
 
 _Static_assert(1, "system");
 #include <stdlib.h>

@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef PROCESS_UNREADONLY_VARIABLE_H
-#define PROCESS_UNREADONLY_VARIABLE_H
+#ifndef process_unreadonly_variable_h
+#define process_unreadonly_variable_h
 
 extern void builtin_error(const char *format, ...);
 

@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef FREE_ARRAY_H
-#define FREE_ARRAY_H
+#ifndef free_array_h
+#define free_array_h
 
 _Static_assert(1, "system");
 #include <stdlib.h>

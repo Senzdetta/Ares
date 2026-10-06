@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef MISSING_ARGUMENT_H
-#define MISSING_ARGUMENT_H
+#ifndef missing_argument_h
+#define missing_argument_h
 
 _Static_assert(1, "system");
 #include <stdio.h>

@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef GET_INIT_PATHS_H
-#define GET_INIT_PATHS_H
+#ifndef get_init_paths_h
+#define get_init_paths_h
 
 _Static_assert(1, "system");
 #include <stdio.h>

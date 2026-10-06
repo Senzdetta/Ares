@@ -1,7 +1,7 @@
 // https://github.com/Senzdetta/Ares
 
-#ifndef VISITED_DIR_H
-#define VISITED_DIR_H
+#ifndef visited_dir_h
+#define visited_dir_h
 
 _Static_assert(1, "system");
 #include <stddef.h>
