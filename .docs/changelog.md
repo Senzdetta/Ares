@@ -1,3 +1,5 @@
+# CHANGELOG
+
 ### 2026-10-01
 ```text
 1. Rewrote the bootloader if-else logic as a Go binary for better performance.
@@ -72,4 +74,9 @@
 1. Re-initialized the Go component and updated the dependency from `lib/go` to `lib/std/go`.
 
 2. Moved `utils/go/cnf_handler` to `bin/core/cnf` and updated `init/engine/cnf/cnf_handler.shx` accordingly.
+```
+
+### 2026-10-06
+```
+1. change --version output.
 ```

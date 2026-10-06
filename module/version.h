@@ -16,12 +16,12 @@ static inline void version_execute(int argc, char **argv) {
 
     const char *name = "Ares";
     const char *version = "v0.1.06102026";
-    const char *creator = "Senzdetta";
+    const char *developer = "Senzdetta";
     const char *homepage = "https://github.com/Senzdetta/Ares";
 
     printf(
-        "%sName: %s%s%s\n",
-        color_N, color_GG, name, color_N
+        "%s- %s%s %s-%s\n",
+        color_DG, color_GG, name, color_DG, color_N
     );
 
     printf(
@@ -30,8 +30,8 @@ static inline void version_execute(int argc, char **argv) {
     );
 
     printf(
-        "%sCreator: %s%s%s\n",
-        color_N, color_GG, creator, color_N
+        "%sDeveloper: %s%s%s\n",
+        color_N, color_GG, developer, color_N
     );
 
     printf(
