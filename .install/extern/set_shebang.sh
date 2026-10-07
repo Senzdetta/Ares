@@ -1,6 +1,5 @@
 function install::extern::setShebang() {
     local -a target=(
-        "${targetins,,}.sh"
         "data/yumipr/themes/default.lua"
     )
 
