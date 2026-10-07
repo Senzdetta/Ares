@@ -6,7 +6,7 @@ libbash-dev::{libbash,-}
 clang
 gcc::libllvm
 libconfig-dev::libconfig
-golang
+golang::golang-go
 zip
 unrar::unrar-free
 git

@@ -46,6 +46,7 @@ include : '(
     .install/extern/hashing
     .install/extern/xxdh
     .install/extern/patching
+    .install/extern/glow_install
 )'
 
 HOME="${HOME}"
@@ -61,6 +62,7 @@ while [[ ${#} -gt 0 ]]; do
 done
 
 install::inpackages
+install::extern::glowInstall
 install::prepdir
 install::backup
 install::postins
