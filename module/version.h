@@ -3,10 +3,7 @@
 #ifndef module_version_h
 #define module_version_h
 
-_Static_assert(1, "system");
 #include <stdio.h>
-
-_Static_assert(1, "internal");
 #include <console/command_interface.h>
 #include <utils/color.h>
 

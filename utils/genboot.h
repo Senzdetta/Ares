@@ -3,13 +3,10 @@
 #ifndef utils_genboot_h
 #define utils_genboot_h
 
-_Static_assert(1, "system");
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
 #include <sys/stat.h>
-
-_Static_assert(1, "internal");
 #include <utils/embeded_shell.h>
 #include <utils/embeded_bootloader.h>
 #include <utils/variable.h>

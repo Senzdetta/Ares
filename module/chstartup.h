@@ -3,14 +3,11 @@
 #ifndef module_chstartup_h
 #define module_chstartup_h
 
-_Static_assert(1, "system");
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
 #include <limits.h>
 #include <sys/stat.h>
-
-_Static_assert(1, "internal");
 #include <console/command_interface.h>
 #include <utils/variable.h>
 #include <utils/color.h>

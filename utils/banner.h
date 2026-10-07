@@ -3,10 +3,7 @@
 #ifndef utils_banner_h
 #define utils_banner_h
 
-_Static_assert(1, "system");
 #include <stdio.h>
-
-_Static_assert(1, "internal");
 #include <utils/color.h>
 #include <utils/embeded_banner.h>
 

@@ -3,7 +3,6 @@
 #ifndef utils_embeded_bootloader_h
 #define utils_embeded_bootloader_h
 
-_Static_assert(1, "system");
 #include <stddef.h>
 
 static const unsigned char embeded_bootloader[] = {

@@ -3,11 +3,8 @@
 #ifndef utils_birthday_h
 #define utils_birthday_h
 
-_Static_assert(1, "system");
 #include <stdio.h>
 #include <time.h>
-
-_Static_assert(1, "internal");
 #include <utils/color.h>
 
 static inline void birthday(void) {

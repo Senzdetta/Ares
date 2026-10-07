@@ -3,10 +3,7 @@
 #ifndef utils_invalid_option_h
 #define utils_invalid_option_h
 
-_Static_assert(1, "system");
 #include <stdio.h>
-
-_Static_assert(1, "internal");
 #include <utils/color.h>
 
 static inline void invalidOption(const char *input) {

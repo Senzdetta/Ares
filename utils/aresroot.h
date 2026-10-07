@@ -3,7 +3,6 @@
 #ifndef utils_aresroot_h
 #define utils_aresroot_h
 
-_Static_assert(1, "system");
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -11,8 +10,6 @@ _Static_assert(1, "system");
 #include <libgen.h>
 #include <limits.h>
 #include <errno.h>
-
-_Static_assert(1, "internal");
 #include <utils/color.h>
 
 static inline const char* aresroot(void) {

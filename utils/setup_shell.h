@@ -3,14 +3,11 @@
 #ifndef utils_setup_shell_h
 #define utils_setup_shell_h
 
-_Static_assert(1, "system");
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
 #include <limits.h>
 #include <string.h>
-
-_Static_assert(1, "internal");
 #include <utils/variable.h>
 
 static inline void setup_shell(void) {

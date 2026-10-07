@@ -3,15 +3,12 @@
 #ifndef module_exec_h
 #define module_exec_h
 
-_Static_assert(1, "system");
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
 #include <limits.h>
 #include <errno.h>
-
-_Static_assert(1, "internal");
 #include <console/command_interface.h>
 #include <utils/variable.h>
 #include <utils/color.h>
