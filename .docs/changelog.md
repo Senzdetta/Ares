@@ -77,6 +77,13 @@
 ```
 
 ### 2026-10-06
-```
+```text
 1. change --version output.
+```
+
+### 2026-10-08
+```text
+1. Added logic so that the --uwu output is fixed as "(・ω・)" instead of being random.
+
+2. removed utils/go/nyanners, as --uwu logic is now native to C (module/uwu.h).
 ```
