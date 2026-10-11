@@ -9,7 +9,7 @@ import (
     "io/fs"
 )
 
-func Chmodf(target string, mode os.FileMode) error {
+func chmodf(target string, mode os.FileMode) error {
     return filepath.WalkDir(
         target, func(
             path string,

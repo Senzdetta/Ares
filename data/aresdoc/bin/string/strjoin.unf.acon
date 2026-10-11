@@ -1,0 +1,8 @@
+Usage:
+    strjoin [--del <delimiter>] --str <strings...>
+    strjoin [--del <delimiter>] --stdin
+
+Example:
+    strjoin --str a b c
+    strjoin --del " - " --str apple banana pineapple
+    printf "apple\nbanana\npineapple\n" | strjoin --del ", " --stdin

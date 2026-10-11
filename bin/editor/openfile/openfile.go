@@ -6,6 +6,7 @@ import (
     "fmt"
     "strings"
     "os"
+    "bufio"
     "os/exec"
     "path/filepath"
     "github.com/Senzdetta/Ares/lib/std/go/color"
@@ -35,25 +36,62 @@ func main() {
         os.Exit(1)
     }
 
+    var filePath string
+
+    if isRealFile && isAlias {
+        fmt.Printf(
+            "%s[!] %sConflict found for %s%s%s:\n",
+            color.YY, color.N, color.GG, arg, color.N,
+        )
+
+        fmt.Printf(
+            "  %s› %sfile/directory: %s%s%s\n",
+            color.B, color.N, color.GG, arg, color.N,
+        )
+
+        fmt.Printf(
+            "  %s› %salias: %s%s %s-> %s%s%s\n",
+            color.B, color.N, color.GG, arg, color.DG,
+            color.GG, resolvePath(arg, configPath), color.N,
+        )
+
+        fmt.Printf(
+            "%sSelect to open (f/a): ",
+            color.N,
+        )
+
+        reader := bufio.NewReader(os.Stdin)
+        input, _ := reader.ReadString('\n')
+        input = strings.TrimSpace(input)
+
+        if input == "a" {
+            filePath = resolvePath(arg, configPath)
+        } else {
+            filePath = expandPath(arg)
+        }
+    } else if isAlias {
+        filePath = resolvePath(arg, configPath)
+    } else if isRealFile {
+        filePath = expandPath(arg)
+    } else {
+        filePath = expandPath(arg)
+    }
+
     prefix := os.Getenv("PREFIX")
     if prefix == "" {
         prefix = "/usr"
     }
 
-    rmTemp := filepath.Join(
-        prefix, "tmp", "openfile",
-    )
+    rmTemp := filepath.Join(prefix, "tmp", "openfile")
     defer os.RemoveAll(rmTemp)
 
     microCfgDir := filepath.Join(
         prefix,
-        "tmp",
-        "openfile",
-        "theme",
+        "tmp", "openfile", "theme",
     )
-    setupEditor(microCfgDir)
 
-    filePath := resolvePath(arg, configPath)
+    setupEditor(microCfgDir, configPath)
+
     cmd := exec.Command("micro",
         "-config-dir",
         microCfgDir,

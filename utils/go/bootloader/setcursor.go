@@ -6,7 +6,7 @@ import (
     "fmt"
 )
 
-func Setcursor(style string) error {
+func setcursor(style string) error {
     switch style {
         case "default":
             fmt.Print(

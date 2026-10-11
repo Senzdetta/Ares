@@ -1,25 +1,31 @@
-The {color.GG}Environment Loader {color.N}in {color.GG}Ares Framework {color.N}manages the execution and setup of shell environments through three core loaders executed sequentially:
+The {color.GG}Environment Loader {color.N}in {color.GG}Ares Framework {color.N}manages shell environment setup through three core loaders executed sequentially:
 
 {color.RO}1. {color.BB}loadrc{color.N}
-    Loads {color.GG}~/.aresrc{color.N}, or falls back to internal {color.GG}console/ares.rc {color.N}if the users file is empty.
+    Loads {color.GG}~/.aresrc{color.N}, or falls back to the internal {color.GG}console/ares.rc {color.N}if the user's file is empty.
 
 {color.RO}2. {color.BB}shmod{color.N}
     Recursively loads scripts from {color.GG}~/.ares/init/shmod/{color.N}, or falls back to internal {color.GG}init/shmod/{color.N}.
     {color.YY}Note{color.N}:
-      {color.WW}shmod prioritizes user files.{color.N}
-      {color.WW}If a user has even one valid module in their folder, shmod will load ONLY that user directory and skip internal modules entirely (no merging).{color.N}
-      {color.WW}If your command-not-found handler breaks, Ctrl+R stops working, or prompt disappears, verify if {color.GG}~/.ares/init/shmod/ {color.N}contains an almost empty script (e.g., just '{color.BB}echo{color.WW}').{color.N}
+        {color.WW}shmod prioritizes user modules.{color.N}
+        {color.WW}If the user directory contains at least one valid module, shmod loads ONLY that directory and skips internal modules entirely (no merging).{color.N}
+        {color.WW}If your command-not-found handler breaks, Ctrl+R stops working, or the prompt disappears, check whether {color.GG}~/.ares/init/shmod/{color.N} contains an incomplete script (e.g., one containing only '{color.BB}echo{color.WW}').{color.N}
 
 {color.RO}3. {color.BB}llsi{color.N}
     Loads modules registered in {color.GG}init/llsi.init{color.N}.
     Designed for persistent/exported modules.
-    However, functions and variables must be exported manually for maximum flexibility.
+    Functions and variables must be exported manually when required.
 
-{color.YY}Loading Priority & Hierarchy{color.N}:
-{color.GG}LLSI {color.N}holds the highest precedence in the ecosystem.
-If an unlocked function or variable exists in all three loaders, {color.GG}LLSI {color.N}will overwrite previous definitions from {color.BB}loadrc {color.N}and {color.BB}shmod{color.N}.
+{color.YY}Loading Order & Overwriting{color.N}:
+{color.GG}loadrc{color.N}, {color.GG}shmod{color.N}, and {color.GG}llsi{color.N} execute sequentially in that order.
+    Later definitions can overwrite earlier ones, provided they are not protected by {color.BB}readonly{color.N}.
+    Example:
+        A function defined by {color.BB}loadrc{color.N} can be overwritten by {color.BB}shmod{color.N}, then overwritten again by {color.BB}llsi{color.N}.
+        However, if {color.BB}loadrc{color.N} marks the function as readonly using {color.GG}readonly -f myfunc{color.N}, later loaders cannot overwrite it normally.
 
-Tips for {color.BB}shmod{color.N}:
-To add custom modules without losing default Ares configurations, copy the internal modules first before adding your own:
+    {color.WW}The same principle applies to readonly variables.{color.N}
+    {color.WW}Therefore, LLSI does not always take precedence; the final result depends on the loading order and whether existing definitions are locked.{color.N}
+
+{color.YY}Tips for {color.BB}shmod{color.N}:{color.YY}
+To add custom modules without losing default Ares configurations, copy the internal modules first:
 {color.GG}mkdir {color.CC}-pv ~/.ares/init{color.N}
 {color.GG}cp {color.CC}-rv $__init__/shmod ~/.ares/init/{color.N}

@@ -23,29 +23,21 @@ static inline int is_excluded(
         clean_path, path,
         sizeof(clean_path) - 1
     );
-
     clean_path[sizeof(clean_path) - 1] = '\0';
+
     size_t plen = strlen(clean_path);
-    
     while (plen > 1 && clean_path[plen - 1] == '/') {
         clean_path[--plen] = '\0';
     }
 
     for (size_t i = 0; i < list->count; i++) {
         size_t rlen = strlen(list->rules[i]);
-        if (plen >= rlen) {
+        if (strncmp(clean_path, list->rules[i], rlen) == 0) {
             if (
-                strcmp(
-                    clean_path + plen - rlen,
-                    list->rules[i]
-                ) == 0
+                clean_path[rlen] == '\0' ||
+                clean_path[rlen] == '/'
             ) {
-                if (
-                    plen == rlen ||
-                    clean_path[plen - rlen - 1] == '/'
-                ) {
-                    return 1;
-                }
+                return 1;
             }
         }
     }

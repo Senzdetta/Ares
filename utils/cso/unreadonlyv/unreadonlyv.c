@@ -1,11 +1,6 @@
 // https://github.com/Senzdetta/Ares
 
-_Static_assert(1, "config");
-#ifdef __ANDROID__
-    #include <config.h>
-#else
-    #include <libconfig.h>
-#endif
+#include <config.h>
 
 _Static_assert(1, "system");
 #include <stdio.h>

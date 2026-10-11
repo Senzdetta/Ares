@@ -51,7 +51,11 @@ static inline void append_path(
             sb->str,
             sb->capacity
         );
-        if (!new_str) return;
+
+        if (!new_str) {
+            return;
+        }
+
         sb->str = new_str;
     }
 

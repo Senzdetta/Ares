@@ -1,15 +1,25 @@
 // https://github.com/Senzdetta/Ares
 
-_Static_assert(1, "config");
-#ifdef __ANDROID__
-    #include <config.h>
-#else
-    #include <libconfig.h>
+#ifndef _GNU_SOURCE
+#define _GNU_SOURCE 1
 #endif
+
+#include <string.h>
+#include <stddef.h>
+
+#define HAVE_DPRINTF 1
+#define HAVE_GETHOSTNAME 1
+#define HAVE_STRPBRK 1
+#define HAVE_ATOI 1
+#define HAVE_ATOF 1
+#define HAVE_STRTOD 1
+#define HAVE_GETENV 1
+#define HAVE_QSORT 1
+
+#include <config.h>
 
 _Static_assert(1, "system");
 #include <stdlib.h>
-#include <string.h>
 #include <stdint.h>
 #include <stdio.h>
 #include <unistd.h>

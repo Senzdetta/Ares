@@ -21,12 +21,15 @@ static inline void append_path_list(
     }
 
     char *dup = strdup(path_list);
-    if (!dup) return;
+    if (!dup) {
+        return;
+    }
 
-    char *token = strtok(dup, ":");
+    char *saveptr = NULL;
+    char *token = strtok_r(dup, ":", &saveptr);
     while (token) {
         append_path(sb, token);
-        token = strtok(NULL, ":");
+        token = strtok_r(NULL, ":", &saveptr);
     }
 
     free(dup);

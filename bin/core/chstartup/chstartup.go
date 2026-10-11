@@ -13,6 +13,7 @@ import (
 func main() {
     path := os.Getenv("__config__") + "/startup.conf"
     items, err := readCfg(path)
+
     if err != nil {
         fmt.Printf(
             "%s[!] %sFailed reading startup config: %s%v%s\n",
@@ -36,7 +37,7 @@ func main() {
     if _, err := p.Run(); err != nil {
         fmt.Printf(
             "%s[!] %sError TUI: %s%v%s\n",
-                color.R, color.N, color.GG, err, color.N,
+            color.R, color.N, color.GG, err, color.N,
         )
         os.Exit(1)
     }

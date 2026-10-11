@@ -4,7 +4,6 @@ package main
 
 import (
     "fmt"
-    "strconv"
     "strings"
     "github.com/Senzdetta/Ares/lib/std/go/color"
 )
@@ -31,9 +30,9 @@ func (m model) View() string {
         if m.cursor == i {
             if m.editing {
                 s += fmt.Sprintf(
-                    "%s› %s%s %s= %s%s%s\n",
+                    "%s› %s%s %s= %s%s\n",
                     color.B, color.RR, item.Key, color.DG,
-                    color.B, m.textInput.View(), color.N,
+                    color.B, m.textInput.View(),
                 )
             } else {
                 s += fmt.Sprintf(
@@ -43,22 +42,10 @@ func (m model) View() string {
                 )
             }
         } else {
-            typeTag := ""
-            if _, err := strconv.ParseBool(item.Value); err == nil {
-                typeTag = fmt.Sprintf(
-                    " %s[%sboolean%s]%s",
-                    color.DG, color.YY, color.DG, color.N,
-                )
-            } else if _, err := strconv.ParseFloat(item.Value, 64); err == nil {
-                typeTag = fmt.Sprintf(
-                    " %s[%snumber%s]%s",
-                    color.DG, color.B, color.DG, color.N,
-                )
-            }
             s += fmt.Sprintf(
-                "   %s%s %s= %s%s%s%s\n",
+                "   %s%s %s= %s%s%s\n",
                 color.WW, item.Key, color.DG,
-                color.GG, item.Value, color.N, typeTag,
+                color.GG, item.Value, color.N,
             )
         }
     }

@@ -58,14 +58,15 @@ function install::extern::compile() {
                         final_bin="${parent_dir}/${tool_name}"
                         build_cmd="
                             cd ${full_src_dir}
-                            command gcc \
+                            command clang \
                                 -O3 \
-                                -march=native \
                                 -flto \
+                                -march=native \
                                 -s ${tool_name}.c \
                                 -o ${temp_bin} \
-                                -I${opt}/${targetins}/lib/std/c \
-                                -I${full_src_dir}
+                                -I ${opt}/${targetins}/lib/std/c \
+                                -I ${full_src_dir} \
+                                -I ${opt}/${targetins}
                         "
 
                     elif [[ "${type}" == "go" ]]; then
@@ -79,7 +80,10 @@ function install::extern::compile() {
                         build_cmd="
                             cd ${full_src_dir}
                             command go mod tidy
-                            command go build -o ${temp_bin} .
+                            command go build \
+                                -ldflags='-s -w' \
+                                -trimpath \
+                                -o ${temp_bin} .
                         "
 
                     elif [[ "${type}" == "cso" ]]; then
@@ -93,18 +97,20 @@ function install::extern::compile() {
 
                         build_cmd="
                             cd ${full_src_dir}
-                            command gcc \
+                            command clang \
+                                -O3 \
+                                -flto \
+                                -march=native \
                                 -fPIC \
                                 -shared \
-                                -O3 \
-                                -march=native \
                                 -s ${tool_name}.c \
                                 -o ${temp_bin} \
-                                -I${prefix}/include/bash \
-                                -I${prefix}/include/bash/include \
-                                -I${prefix}/include/bash/builtins \
-                                -I${opt}/${targetins}/lib/std/c \
-                                -I${full_src_dir} \
+                                -I ${prefix}/include/bash \
+                                -I ${prefix}/include/bash/include \
+                                -I ${prefix}/include/bash/builtins \
+                                -I ${opt}/${targetins}/lib/std/c \
+                                -I ${full_src_dir} \
+                                -I ${opt}/${targetins} \
                                 ${extra_flag}
                         "
                     fi
@@ -142,29 +148,23 @@ function install::extern::compile() {
 
         if [[ "${type}" == "cso" && "${__HDPATCHED__}" == true ]]; then
             unset __HDPATCHED__
-            install::getinstall \
-                "command mv ${targethd}.ares.bak ${targethd}" \
-                "Restore: ${color_GG}${targethd}.ares.bak ${color_DG}-> ${color_GG}${targethd}${color_N}"
+            install::extern::restoreHeader --noexit
             unset targethd
+            trap - INT TERM HUP
         fi
     done
 
     install::extern::xxdh
     install::getinstall \
         "
-            command gcc \
+            command clang \
                 -O3 \
                 -flto \
                 -march=native \
                 -s ${opt}/${targetins}/${targetins}.c \
                 -o ${opt}/${targetins}/${targetsyml} \
-                -I ${opt}/${targetins} && \
-                    command rm -rf \
-                        ${opt}/${targetins}/${targetins}.c \
-                        ${opt}/${targetins}/console/*.h \
-                        ${opt}/${targetins}/module \
-                        ${opt}/${targetins}/utils/*.h \
-                        ${opt}/${targetins}/utils/embeded
+                -I ${opt}/${targetins}
         " \
         "Compiling: ${color_GG}${targetins}${color_N}"
+    install::extern::rmsc
 }; readonly -f install::extern::compile

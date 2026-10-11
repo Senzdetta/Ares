@@ -1,0 +1,11 @@
+Usage:
+    strsplit --str <string> [--del <delimiter>] --index <idx>
+    strsplit --stdin [--del <delimiter>] --index <idx>
+
+Example:
+    strsplit --str "a b c d e" --index 1
+    strsplit --str "a,b,c,d" --del "," --index 0-2
+    strsplit --str "a.b.c.d.e" --del "." --index -3-
+    strsplit --str "a b c d e" --index 1--1
+    echo "a b c d e" | strsplit --stdin --index 2-
+    echo "a b c d e" | strsplit --stdin --index -1

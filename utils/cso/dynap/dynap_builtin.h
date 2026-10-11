@@ -83,7 +83,12 @@ static inline int dynap_builtin(WORD_LIST *list) {
                             }
                         }
 
-                        char *token = strtok(val, ",");
+                        char *saveptr = NULL;
+                        char *token = strtok_r(
+                            val, ",",
+                            &saveptr
+                        );
+
                         while (token) {
                             char *clean_tok = trim_whitespace(token);
                             if (*clean_tok) {
@@ -102,7 +107,10 @@ static inline int dynap_builtin(WORD_LIST *list) {
                                     );
                                 }
                             }
-                            token = strtok(NULL, ",");
+                            token = strtok_r(
+                                NULL, ",",
+                                &saveptr
+                            );
                         }
                         break;
                     }

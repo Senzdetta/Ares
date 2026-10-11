@@ -1,0 +1,6 @@
+Usage:
+    rmline <file> --line <num|string> [--out <outfile>]
+
+Example:
+    rmline log.txt --line 9
+    rmline log.txt --line "*success*" --out logsuccess.txt

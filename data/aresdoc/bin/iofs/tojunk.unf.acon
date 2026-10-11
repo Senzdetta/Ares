@@ -1,0 +1,18 @@
+Usage:
+    tojunk <type><mode>:<target>
+
+type:
+    f = file
+    d = directory
+    sf = symlink file
+    sd = symlink directory
+
+mode:
+    0 = for default
+
+example:
+    tojunk f0755:myfile.txt
+    tojunk d0755:myfolder/
+    tojunk sf0755:symlink.file
+    tojunk sd0755:symlink.d
+    tojunk "f0:$HOME/log.txt, sf0:/usr/bin/tool, f0644:/etc/something"

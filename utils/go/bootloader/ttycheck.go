@@ -6,7 +6,7 @@ import (
     "os"
 )
 
-func TTYcheck() bool {
+func ttycheck() bool {
     fi, err := os.Stdout.Stat()
     if err != nil {
         return false

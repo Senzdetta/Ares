@@ -1,0 +1,7 @@
+Usage:
+    strtrans --char <char> --str <string> --transform <char>
+    strtrans --char <char> --stdin --transform <char>
+
+Example:
+    strtrans --char ", " --str "a, b, c" --transform " - "
+    echo $PATH | strtrans --char ":" --stdin --transform '\n'

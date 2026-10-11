@@ -6,7 +6,7 @@ import (
     "strings"
 )
 
-func Generate(lines ...string) string {
+func generate(lines ...string) string {
     var builder strings.Builder
 
     for _, line := range lines {

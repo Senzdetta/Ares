@@ -9,7 +9,7 @@ import (
     "strings"
 )
 
-func Readconf(key string, index int) (string, error) {
+func readconf(key string, index int) (string, error) {
     if index < 1 {
         return "", fmt.Errorf(
             "invalid index 0",

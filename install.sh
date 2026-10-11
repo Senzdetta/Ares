@@ -35,7 +35,7 @@ include : '(
     .install/zparser
     .install/chmod
     .install/backup
-    .install/postins
+    .install/rmov
     .install/symlink
     .install/zsymlink
     .install/extern/xcolor
@@ -47,16 +47,19 @@ include : '(
     .install/extern/xxdh
     .install/extern/patching
     .install/extern/glow_install
+    .install/extern/rmsc
+    .install/extern/restore_header
 )'
 
 HOME="${HOME}"
 __BACKUP__=false
+__PATCH__=interactive
 
 while [[ ${#} -gt 0 ]]; do
     case "${1}" in
         "--home="*) export HOME="${1#*=}" ;;
         "--backup") export __BACKUP__=true ;;
-        "--force-yes") export __FORCEYES__=true ;;
+        "--patch") export __PATCH__="${2}" ;;
     esac
     shift
 done
@@ -65,7 +68,7 @@ install::inpackages
 install::extern::glowInstall
 install::prepdir
 install::backup
-install::postins
+install::rmov
 install::installer
 install::symlink
 install::chmod

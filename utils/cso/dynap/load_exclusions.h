@@ -12,6 +12,7 @@ _Static_assert(1, "system");
 _Static_assert(1, "internal");
 #include <trim_whitespace.h>
 #include <exclude_list.h>
+#include <expand_vars.h>
 
 static inline void load_exclusions(
     const char *config_dir,
@@ -25,91 +26,47 @@ static inline void load_exclusions(
     snprintf(
         filepath,
         sizeof(filepath),
-        "%s/dynap_exclude.scfg",
+        "%s/dynap_exclude.lst",
         config_dir
     );
 
     FILE *fp = fopen(filepath, "r");
-    if (!fp) return;
+    if (!fp) {
+        return;
+    }
 
     char line[1024];
     while (fgets(line, sizeof(line), fp)) {
         char *p = trim_whitespace(line);
         if (
             *p == '\0' ||
-            (p[0] == '/' && p[1] == '/')
+            *p == '#'
         ) {
             continue;
         }
 
-        char *first_quote = strchr(p, '"');
-        if (!first_quote) {
+        char expanded[PATH_MAX];
+        expand_vars(
+            p, expanded,
+            sizeof(expanded)
+        );
+
+        char *clean_exp = trim_whitespace(expanded);
+        if (*clean_exp == '\0') {
             continue;
         }
 
-        char *second_quote = strchr(first_quote + 1, '"');
-        if (!second_quote) {
-            continue;
-        }
+        if (list->count >= list->capacity) {
+            list->capacity = list->capacity == 0 ?
+                16 :
+                list->capacity * 2;
 
-        char *from_word = strstr(second_quote + 1, "from");
-        if (!from_word) {
-            continue;
-        }
-
-        char *third_quote = strchr(from_word, '"');
-        if (!third_quote) {
-            continue;
-        }
-
-        char *fourth_quote = strchr(third_quote + 1, '"');
-        if (!fourth_quote) {
-            continue;
-        }
-
-        size_t t_len = second_quote - (first_quote + 1);
-        size_t p_len = fourth_quote - (third_quote + 1);
-
-        if (
-            t_len > 0 &&
-            p_len > 0 &&
-            t_len < 256 &&
-            p_len < 256
-        ) {
-            char target[256] = {0};
-            char parent[256] = {0};
-
-            strncpy(
-                target,
-                first_quote + 1,
-                t_len
+            list->rules = realloc(
+                list->rules,
+                list->capacity * sizeof(char*)
             );
-
-            strncpy(
-                parent,
-                third_quote + 1,
-                p_len
-            );
-
-            char combined[1024];
-            snprintf(
-                combined,
-                sizeof(combined),
-                "%s/%s",
-                parent, target
-            );
-
-            if (list->count >= list->capacity) {
-                list->capacity = list->capacity == 0 ?
-                    16 :
-                    list->capacity * 2;
-                list->rules = realloc(
-                    list->rules,
-                    list->capacity * sizeof(char*)
-                );
-            }
-            list->rules[list->count++] = strdup(combined);
         }
+        list->rules[list->count++] = strdup(clean_exp);
     }
     fclose(fp);
 }

@@ -8,7 +8,7 @@ import (
     "strings"
 )
 
-func Remake(path string, mode os.FileMode) error {
+func remake(path string, mode os.FileMode) error {
     isDir := strings.HasSuffix(path, "/")
     if err := os.RemoveAll(path); err != nil && !os.IsNotExist(err) {
         return fmt.Errorf(

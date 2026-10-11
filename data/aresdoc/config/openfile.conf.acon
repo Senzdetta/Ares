@@ -1,12 +1,14 @@
-{color.GG}openfile.conf {color.N}is the alias configuration file used by {color.GG}Openfile{color.N}.
-It maps short alias names to file paths for quicker access.
+{color.GG}openfile.conf {color.N}defines file aliases and the custom theme used by {color.GG}openfile{color.N}.
 
-Example {color.BB}openfile.conf{color.N}:
+Example {color.GG}openfile.conf{color.N}:
 {color.DG}# comment{color.N}
-{color.PP}myalias {color.WW}= {color.YY}mylong/path/to/script.sh{color.N}
+{color.PP}openfile.theme {color.WW}= {color.YY}path/to/theme.micro{color.N}
+{color.PP}myalias {color.WW}= {color.YY}path/to/file{color.N}
 
-Example:
-    {color.R}- {color.GG}openfile {color.CC}myalias{color.N}
+Usage:
+    {color.R}- {color.GG}openfile {color.CC}<alias|file>{color.N}
+    {color.R}- {color.GG}openfile {color.CC}--list-alias{color.N}
 
-The alias above opens: {color.GG}mylong/path/to/script.sh{color.N}
-Aliases can be listed with: {color.GG}openfile {color.CC}--list-alias{color.N}
+Aliases map shortcut names to file paths.
+openfile.theme specifies the custom Micro editor theme.
+Both entries support variable expansion and ~.

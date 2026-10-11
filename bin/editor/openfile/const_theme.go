@@ -2,7 +2,7 @@
 
 package main
 
-const theme = `
+const fallbackTheme = `
 # https://github.com/catppuccin/micro/blob/main/themes/catppuccin-mocha.micro
 
 color-link default "#cdd6f4,#1e1e2e"

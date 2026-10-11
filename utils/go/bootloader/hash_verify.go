@@ -11,7 +11,7 @@ import (
     "encoding/hex"
 )
 
-func HashVerify(targetType string) (bool, error) {
+func hashVerify(targetType string) (bool, error) {
     var targetFilePath string
     var expectedHash string
 

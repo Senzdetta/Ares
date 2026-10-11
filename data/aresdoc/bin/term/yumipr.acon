@@ -1,3 +1,4 @@
---render
---settheme <theme>
---list-themes
+Usage:
+    yumipr --render
+    yumipr --settheme <theme>
+    yumipr --list-themes

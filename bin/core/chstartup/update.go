@@ -4,7 +4,6 @@ package main
 
 import (
     "fmt"
-    "strconv"
     "strings"
     "github.com/charmbracelet/bubbles/textinput"
     "github.com/Senzdetta/Ares/lib/std/go/color"
@@ -47,33 +46,8 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
                 case "enter":
                     if !m.items[m.cursor].IsComment {
                         if m.editing {
-                            oldValue := m.items[m.cursor].Value
                             newValue := strings.TrimSpace(m.textInput.Value())
                             keyChanged := m.items[m.cursor].Key
-
-                            isValid := true
-                            errorMsg := ""
-
-                            if _, err := strconv.ParseBool(oldValue); err == nil {
-                                if _, errNew := strconv.ParseBool(newValue); errNew != nil {
-                                    isValid = false
-                                    errorMsg = "Type data must be boolean (true/false)"
-                                }
-                            } else if _, err := strconv.ParseFloat(oldValue, 64); err == nil {
-                                if newValue == "" || strings.HasSuffix(newValue, ".") || strings.HasPrefix(newValue, ".") {
-                                    isValid = false
-                                    errorMsg = "Invalid number format"
-                                } else if _, errNew := strconv.ParseFloat(newValue, 64); errNew != nil {
-                                    isValid = false
-                                    errorMsg = "Type data must be number/numeric"
-                                }
-                            }
-
-                            if !isValid {
-                                m.savedStatus = color.R + "» " + color.N + "Failed: " + color.RR + errorMsg + color.N
-                                m.editing = false
-                                return m, nil
-                            }
 
                             m.items[m.cursor].Value = newValue
                             m.editing = false
@@ -84,7 +58,7 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
                             } else {
                                 m.savedStatus = color.GG + "» " + color.N + "Config saved"
                                 logMessage := fmt.Sprintf(
-                                    "\"[*] Change %s => %s\"",
+                                    "\"Change %s => %s\"",
                                     keyChanged, newValue,
                                 )
                                 shell(

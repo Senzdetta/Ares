@@ -10,7 +10,7 @@ import (
     "io/fs"
 )
 
-func Rmext(target string) error {
+func rmext(target string) error {
     return filepath.WalkDir(
         target, func(
             path string,

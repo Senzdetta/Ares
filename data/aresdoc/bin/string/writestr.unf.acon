@@ -1,0 +1,6 @@
+Usage:
+    writestr [--fd <fd>] --str <string...>
+
+Example:
+    writestr --str "Hello World"
+    writestr --fd stderr --str "Error: something"

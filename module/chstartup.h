@@ -11,6 +11,8 @@
 #include <console/command_interface.h>
 #include <utils/variable.h>
 #include <utils/color.h>
+#include <utils/crawlpath.h>
+#include <utils/setup_shell.h>
 
 static inline void chstartup_execute(int argc, char **argv) {
     (void)argc;
@@ -39,9 +41,14 @@ static inline void chstartup_execute(int argc, char **argv) {
             );
         }
 
+        crawlpath();
+        setup_shell();
+
         setenv("__config__", config, 1);
+
         int status = system(engine);
         (void)status;
+
         unsetenv("__config__");
     } else {
         printf(

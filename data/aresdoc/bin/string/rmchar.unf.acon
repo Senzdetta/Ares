@@ -1,0 +1,8 @@
+Usage:
+    rmchar --char <char> --str <string> [--transform <char>]
+    rmchar --char <char> --stdin [--transform <char>]
+
+Example
+    rmchar --char ',' --str "apple, banana, pineapple"
+    rmchar --char : --str $PATH --transform '\n'
+    writefstr --str $PATH | rmchar --char : --stdin --transform '\n'

@@ -5,6 +5,7 @@
 
 _Static_assert(1, "system");
 #include <string.h>
+#include <stdlib.h>
 
 static inline void expand_vars(
     const char *src,
@@ -14,12 +15,10 @@ static inline void expand_vars(
     size_t d = 0;
     dest[0] = '\0';
 
-    for (
-        size_t i = 0; src[i] != '\0' &&
-        d < dest_size - 1;
-    ) {
+    for (size_t i = 0; src[i] != '\0' && d < dest_size - 1;) {
         if (src[i] == '$') {
             i++;
+
             int has_brace = 0;
             if (src[i] == '{') {
                 has_brace = 1;
@@ -29,19 +28,11 @@ static inline void expand_vars(
             char varname[256];
             size_t vn = 0;
             while (
-                src[i] != '\0' && (
-                    (
-                        src[i] >= 'A' &&
-                        src[i] <= 'Z'
-                    ) ||
-                    (
-                        src[i] >= 'a' &&
-                        src[i] <= 'z'
-                    ) ||
-                    (
-                        src[i] >= '0' &&
-                        src[i] <= '9'
-                    ) ||
+                src[i] != '\0' &&
+                (
+                    (src[i] >= 'A' && src[i] <= 'Z') ||
+                    (src[i] >= 'a' && src[i] <= 'z') ||
+                    (src[i] >= '0' && src[i] <= '9') ||
                     src[i] == '_'
                 )
             ) {
@@ -57,13 +48,21 @@ static inline void expand_vars(
             }
 
             const char *val = NULL;
-            if (strcmp(varname, "PREFIX") == 0) {
-                val = get_string_value("PREFIX");
-                if (!val || !*val) {
-                    val = "/usr";
-                }
-            } else {
-                val = get_string_value(varname);
+
+            SHELL_VAR *var = find_variable(varname);
+            if (var) {
+                val = get_variable_value(var);
+            }
+
+            if (!val || !*val) {
+                val = getenv(varname);
+            }
+
+            if (
+                (!val || !*val) &&
+                strcmp(varname, "PREFIX") == 0
+            ) {
+                val = "/usr";
             }
 
             if (val) {

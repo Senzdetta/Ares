@@ -11,7 +11,7 @@ import (
 var BootCode []string
 
 func main() {
-    if !TTYcheck() {
+    if !ttycheck() {
         fmt.Fprintf(
             os.Stderr,
             "%s[!] %sBootloader: direct execution not allowed\n",
@@ -31,7 +31,7 @@ func main() {
 
     switch os.Args[1] {
         case "--bootloader":
-            if ok, err := HashVerify("bootloader"); err != nil || !ok {
+            if ok, err := hashVerify("bootloader"); err != nil || !ok {
                 fmt.Fprintf(
                     os.Stderr,
                     "%s[!] %sBootloader: bootloader verify failed\n",
@@ -40,24 +40,9 @@ func main() {
                 fmt.Print("kill -9 $$ 2>/dev/null || exit 1\n")
                 os.Exit(1)
             }
-
-            SSinit()
-
-            SSremoveLog()
-            SSremoveGscache()
-            SSremoveCscache()
-            SSremoveBinext()
-            SSchmodToolkit()
-
-            SScnf()
-            SSprompt()
-            SSsuggestion()
-            SScursor()
-            SSstartupHint()
-
-            SSpostInit()
+            generateBootloader()
         case "--shell":
-            if ok, err := HashVerify("shell"); err != nil || !ok {
+            if ok, err := hashVerify("shell"); err != nil || !ok {
                 fmt.Fprintf(
                     os.Stderr,
                     "%s[!] %sBootloader: shell verify failed\n",
@@ -66,7 +51,7 @@ func main() {
                 fmt.Print("kill -9 $$ 2>/dev/null || exit 1\n")
                 os.Exit(1)
             }
-            BSgen()
+            generateShell()
         default:
             fmt.Fprintf(
                 os.Stderr,
@@ -76,7 +61,7 @@ func main() {
             os.Exit(1)
     }
 
-    eval := Generate(BootCode...)
+    eval := generate(BootCode...)
     fmt.Print(eval)
 }
 
