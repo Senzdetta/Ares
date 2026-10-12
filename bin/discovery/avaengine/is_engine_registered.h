@@ -14,12 +14,16 @@ static inline bool is_engine_registered(
     const registered_engine_t *reg,
     const char *rel_path
 ) {
-    if (!reg || !rel_path) return false;
+    if (!reg || !rel_path) {
+        return false;
+    }
+
     for (size_t i = 0; i < reg->count; i++) {
         if (strcmp(reg->paths[i], rel_path) == 0) {
             return true;
         }
     }
+
     return false;
 }
 

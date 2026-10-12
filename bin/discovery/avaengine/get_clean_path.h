@@ -18,7 +18,9 @@ static inline void get_clean_path(
     char *out_buf,
     size_t buf_size
 ) {
-    if (!path || !out_buf) return;
+    if (!path || !out_buf) {
+        return;
+    }
 
     const char *aresroot_env = getenv("__aresroot__");
     if (aresroot_env && strlen(aresroot_env) > 0) {

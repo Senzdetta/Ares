@@ -11,7 +11,10 @@ static inline bool starts_with(
     const char *str,
     const char *prefix
 ) {
-    if (!str || !prefix) return false;
+    if (!str || !prefix) {
+        return false;
+    }
+
     return strncmp(
         str, prefix,
         strlen(prefix)

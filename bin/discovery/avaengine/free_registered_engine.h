@@ -12,10 +12,14 @@ _Static_assert(1, "internal");
 static inline void free_registered_engine(
     registered_engine_t *reg
 ) {
-    if (!reg) return;
+    if (!reg) {
+        return;
+    }
+
     for (size_t i = 0; i < reg->count; i++) {
         free(reg->paths[i]);
     }
+
     free(reg->paths);
     reg->paths = NULL;
     reg->count = 0;

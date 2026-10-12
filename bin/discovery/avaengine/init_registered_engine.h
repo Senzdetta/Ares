@@ -12,7 +12,10 @@ _Static_assert(1, "internal");
 static inline void init_registered_engine(
     registered_engine_t *reg
 ) {
-    if (!reg) return;
+    if (!reg) {
+        return;
+    }
+
     reg->paths = NULL;
     reg->count = 0;
     reg->cap = 0;

@@ -8,7 +8,10 @@ _Static_assert(1, "internal");
 #include <rstrip_slash.h>
 
 static inline char *strip_slashes(char *str) {
-    if (!str) return NULL;
+    if (!str) {
+        return NULL;
+    }
+
     return rstrip_slash(
         lstrip_slash(str)
     );

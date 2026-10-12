@@ -7,11 +7,15 @@ _Static_assert(1, "system");
 #include <string.h>
 
 static inline char *rstrip_slash(char *str) {
-    if (!str) return NULL;
+    if (!str) {
+        return NULL;
+    }
+
     size_t len = strlen(str);
     while (len > 0 && str[len - 1] == '/') {
         str[--len] = '\0';
     }
+
     return str;
 }
 

@@ -80,7 +80,9 @@ static inline bool scandir_execute_engine(
     }
 
     DIR *dir = opendir(real_path);
-    if (!dir) return false;
+    if (!dir) {
+        return false;
+    }
 
     char **engine_entries = NULL;
     size_t engine_count = 0;
@@ -92,8 +94,16 @@ static inline bool scandir_execute_engine(
     char real_engine_root[PATH_MAX] = "";
     if (aresroot_env) {
         char default_engine_root[PATH_MAX];
-        snprintf(default_engine_root, sizeof(default_engine_root), "%s/init/engine", aresroot_env);
-        realpath(default_engine_root, real_engine_root);
+        snprintf(
+            default_engine_root, sizeof(default_engine_root),
+            "%s/init/engine",
+            aresroot_env
+        );
+
+        realpath(
+            default_engine_root,
+            real_engine_root
+        );
     }
 
     struct dirent *entry;
@@ -126,18 +136,33 @@ static inline bool scandir_execute_engine(
                         strlen(real_engine_root)
                     ) == 0
                 ) {
-                    const char *p = full_path + strlen(real_engine_root);
-                    while (*p == '/') p++;
-                    snprintf(rel_engine_path, sizeof(rel_engine_path), "%s", p);
+                    const char *p = full_path + strlen(
+                        real_engine_root
+                    );
+
+                    while (*p == '/') {
+                        p++;
+                    }
+
+                    snprintf(
+                        rel_engine_path, sizeof(rel_engine_path),
+                        "%s",
+                        p
+                    );
                 }
 
                 if (strchr(rel_engine_path, '/') != NULL) {
-                    bool registered = is_engine_registered(reg, rel_engine_path);
+                    bool registered = is_engine_registered(
+                        reg,
+                        rel_engine_path
+                    );
+
                     if (!active_only || registered) {
                         engine_entries = realloc(
                             engine_entries,
                             (engine_count + 1) * sizeof(char *)
                         );
+
                         engine_entries[engine_count++] = strdup(entry->d_name);
                     }
                 }
@@ -153,7 +178,6 @@ static inline bool scandir_execute_engine(
     closedir(dir);
 
     bool found = false;
-
     if (engine_count > 0 && match) {
         qsort(
             engine_entries,
@@ -177,16 +201,40 @@ static inline bool scandir_execute_engine(
             );
 
             char full_entry_path[PATH_MAX];
-            snprintf(full_entry_path, sizeof(full_entry_path), "%s/%s", real_path, engine_entries[i]);
-            
+            snprintf(
+                full_entry_path, sizeof(full_entry_path),
+                "%s/%s",
+                real_path, engine_entries[i]
+            );
+
             char rel_engine_path[PATH_MAX] = "";
-            if (strlen(real_engine_root) > 0 && strncmp(full_entry_path, real_engine_root, strlen(real_engine_root)) == 0) {
-                const char *p = full_entry_path + strlen(real_engine_root);
-                while (*p == '/') p++;
-                snprintf(rel_engine_path, sizeof(rel_engine_path), "%s", p);
+            if (
+                strlen(real_engine_root) > 0 &&
+                strncmp(
+                    full_entry_path,
+                    real_engine_root,
+                    strlen(real_engine_root)
+                ) == 0
+            ) {
+                const char *p = full_entry_path + strlen(
+                    real_engine_root
+                );
+
+                while (*p == '/') {
+                    p++;
+                }
+
+                snprintf(
+                    rel_engine_path, sizeof(rel_engine_path),
+                    "%s",
+                    p
+                );
             }
 
-            bool registered = is_engine_registered(reg, rel_engine_path);
+            bool registered = is_engine_registered(
+                reg,
+                rel_engine_path
+            );
 
             if (active_only) {
                 if (registered) {

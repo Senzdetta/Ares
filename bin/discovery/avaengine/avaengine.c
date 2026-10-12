@@ -56,8 +56,8 @@ int main(int argc, char *argv[]) {
     if (!aresroot_env || strlen(aresroot_env) == 0) {
         fprintf(
             stderr,
-            "%s[!] %sEnvironment variable: __aresroot__ not found!\n",
-            color_R, color_N
+            "%s[!] %sEnvironment variable: %s__aresroot__ %snot found!\n",
+            color_R, color_N, color_GG, color_N
         );
         return 1;
     }
@@ -74,7 +74,10 @@ int main(int argc, char *argv[]) {
             aresroot_env
         );
 
-        parse_startup_conf(conf_file_path, &active_engines);
+        parse_startup_conf(
+            conf_file_path,
+            &active_engines
+        );
     }
 
     char target_path[PATH_MAX];
@@ -115,7 +118,6 @@ int main(int argc, char *argv[]) {
     }
 
     free_registered_engine(&active_engines);
-
     return 0;
 }
 

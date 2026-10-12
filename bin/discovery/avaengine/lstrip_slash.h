@@ -7,10 +7,14 @@ _Static_assert(1, "system");
 #include <string.h>
 
 static inline char *lstrip_slash(char *str) {
-    if (!str) return NULL;
+    if (!str) {
+        return NULL;
+    }
+
     while (*str == '/') {
         str++;
     }
+
     return str;
 }
 
