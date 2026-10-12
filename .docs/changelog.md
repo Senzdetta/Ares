@@ -157,4 +157,10 @@
    - ss_* -> generate_bootloader.go
    - bs_* -> generate_shell.go
    ...along with several changes to Fprintf and function names.
+
+2. I’ve split the Ares core—along with the config, CSO, and bootloader—into separate subsystems.
+   Ares now has a subsystem architecture, including ares-subsystem-crossp for cross-platform support.
+   Ironically, while I had been struggling with performance issues and GNU Bash headers that kept breaking across versions, it turned out the cross-platform version—which I assumed would be much slower—didn't actually show a noticeable difference.
+   Both have very similar startup times.
+   So... I’m now prioritizing ares-subsystem-crossp over ares-subsystem-glibc, only maintaining the glibc version when I feel like it.
 ```

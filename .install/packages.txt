@@ -24,3 +24,4 @@ bat
 glow::-
 luajit
 xxd
+rsync

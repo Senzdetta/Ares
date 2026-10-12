@@ -1,6 +1,7 @@
 function install::extern::compile() {
     local -a compile_targets=(
         "cso=${opt}/${targetins}/utils/cso"
+        "c=${opt}/${targetins}/utils/c"
         "go=${opt}/${targetins}/utils/go"
         "c=${opt}/${targetins}/bin"
         "go=${opt}/${targetins}/bin"
@@ -129,15 +130,6 @@ function install::extern::compile() {
                         if [[ "${type}" == "cso" ]]; then
                             local symlink_dir="${opt}/${targetins}/lib/std/shell/cso"
                             command mkdir -p "${symlink_dir}"
-
-                            local actual="$(
-                                command realpath -m \
-                                    "${final_bin}"
-                            )"
-
-                            command ln -sf \
-                                "${actual}" \
-                                "${symlink_dir}/${tool_name}.so"
                         else
                             command chmod +x "${final_bin}"
                         fi

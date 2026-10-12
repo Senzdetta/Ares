@@ -1,0 +1,81 @@
+{color.GG}startup.conf {color.N}defines startup behavior and runtime settings for {color.GG}Ares Framework{color.N}.
+
+Available keys:
+{color.PP}home {color.WW}= {color.YY}~{color.N}
+    Path used by {color.GG}rhome.so {color.N}to set $HOME.
+    Supports ~, $var, and absolute paths.
+
+{color.PP}toolkit {color.WW}= {color.YY}$__aresroot__/bin, <+readonly>{color.N}
+    Paths registered to $PATH by {color.GG}dynap.so{color.N}.
+    <+readonly> marks $PATH as readonly.
+    <-readonly> disables the readonly flag.
+
+{color.PP}chmod_toolkit {color.WW}= {color.YY}true{color.N}
+    Whether the {color.GG}bootloader {color.N}changes permissions for toolkit files ($__aresroot__/bin/*) at startup.
+
+{color.PP}remove_log {color.WW}= {color.YY}false{color.N}
+    Whether the {color.GG}bootloader {color.N}removes logs from ~/.ares_log/* at startup.
+
+{color.PP}remove_binext {color.WW}= {color.YY}true{color.N}
+    Whether the {color.GG}bootloader {color.N}removes tool extensions in $__aresroot__/bin/* at startup.
+    Example: myscript.sh becomes myscript.
+    Duplicate names are handled.
+
+{color.PP}remove_gscache {color.WW}= {color.YY}false{color.N}
+    Whether the {color.GG}bootloader {color.N}removes GoScript cache files from $TMPDIR/ares/goscript_cache/* at startup.
+
+{color.PP}remove_cscache {color.WW}= {color.YY}false{color.N}
+    Whether the {color.GG}bootloader {color.N}removes CScript cache files from $TMPDIR/ares/cscript_cache at startup.
+
+{color.PP}startup_hint {color.WW}= {color.YY}true{color.N}
+    Whether the {color.GG}bootloader {color.N}displays startup hints.
+
+{color.PP}cursor {color.WW}= {color.YY}blink-underline{color.N}
+    Wheter the {color.GG}bootloader {color.N}to sets the terminal cursor style.
+    Available styles:
+        {color.R}- {color.GG}native{color.N}
+        {color.R}- {color.GG}default{color.N}
+        {color.R}- {color.GG}block{color.N}
+        {color.R}- {color.GG}blink-block{color.N}
+        {color.R}- {color.GG}line{color.N}
+        {color.R}- {color.GG}blink-line{color.N}
+        {color.R}- {color.GG}underline{color.N}
+        {color.R}- {color.GG}blink-underline{color.N}
+
+{color.PP}prompt {color.WW}= {color.YY}true{color.N}
+    Whether the {color.GG}bootloader {color.N}enables the prompt engine.
+
+{color.PP}prompt_engine {color.WW}= {color.YY}yumipr{color.N}
+    Wheter the {color.GG}bootloader {color.N}to selects the prompt engine.
+
+{color.PP}yumipr_theme {color.WW}= {color.YY}themes/default.lua{color.N}
+    Specifies the theme used by {color.GG}yumipr{color.N}.
+
+{color.PP}suggestion {color.WW}= {color.YY}false{color.N}
+    Whether the {color.GG}bootloader {color.N}enables the real-time autosuggestion engine.
+    Enabling it with "suggestion = true" triggers a warning by default.
+    Use "suggestion = true --force" to suppress the warning.
+
+{color.PP}suggestion_engine {color.WW}= {color.YY}shgest{color.N}
+    Wheter the {color.GG}bootloader {color.N}to selects the autosuggestion engine.
+
+{color.PP}cnf {color.WW}= {color.YY}true{color.N}
+    Whether the {color.GG}bootloader {color.N}enables the Command Not Found handler.
+
+{color.PP}cnf_engine {color.WW}= {color.YY}cnf_handler{color.N}
+    Wheter the {color.GG}bootloader {color.N}to selects the Command Not Found engine.
+
+{color.PP}lock_variable {color.WW}= {color.YY}true{color.N}
+    Whether {color.GG}dynav.so {color.N}and the {color.GG}bootloader {color.N}mark Ares Framework variables as readonly.
+
+Engine paths:
+Keys ending in _engine select modules from $__aresroot__/init/engine/.
+The key name determines the engine category.
+
+Example:
+{color.PP}cnf_engine {color.WW}= {color.YY}yourcustom_cnf{color.N}
+{color.PP}suggestion_engine {color.WW}= {color.YY}shgest{color.N}
+
+Loads:
+    {color.R}- {color.GG}$__aresroot__/init/engine/cnf/yourcustom_cnf.shx{color.N}
+    {color.R}- {color.GG}$__aresroot__/init/engine/suggestion/shgest.shx{color.N}

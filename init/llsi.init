@@ -6,9 +6,4 @@ init::llsi {
     sigtrap -> init/llsi/sigtrap.llsi
 }
 
-lib::std::shell::cso {
-    runtime.init -> lib/std/shell/cso/init.llsi
-    runtime.free -> lib/std/shell/cso/free.llsi
-}
-
 // Copyright (c) 2026 Senzdetta

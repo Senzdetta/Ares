@@ -49,21 +49,28 @@ include : '(
     .install/extern/glow_install
     .install/extern/rmsc
     .install/extern/restore_header
+    .install/extern/update_preinstall
+    .install/extern/ares_subsystem
 )'
 
 HOME="${HOME}"
 __BACKUP__=false
 __PATCH__=interactive
+__UPPRE__=false
+__SUBSYSTEM__=interactive
 
 while [[ ${#} -gt 0 ]]; do
     case "${1}" in
         "--home="*) export HOME="${1#*=}" ;;
         "--backup") export __BACKUP__=true ;;
         "--patch") export __PATCH__="${2}" ;;
+        "--update-preinstall") export __UPPRE__=true ;;
+        "--subsystem") export __SUBSYSTEM__="${2}" ;;
     esac
     shift
 done
 
+install::extern::aresSubsystem
 install::inpackages
 install::extern::glowInstall
 install::prepdir

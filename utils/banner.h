@@ -5,7 +5,7 @@
 
 #include <stdio.h>
 #include <utils/color.h>
-#include <utils/embeded_banner.h>
+#include <utils/embeded/embeded_banner.h>
 
 static inline void banner(void) {
     printf(

@@ -7,8 +7,8 @@
 #include <stdlib.h>
 #include <limits.h>
 #include <sys/stat.h>
-#include <utils/embeded_shell.h>
-#include <utils/embeded_bootloader.h>
+#include <utils/embeded/embeded_shell.h>
+#include <utils/embeded/embeded_bootloader.h>
 #include <utils/variable.h>
 #include <utils/color.h>
 

@@ -1,11 +1,11 @@
-{color.GG}dynap_exclude.lst {color.N}defines paths to exclude from automatic PATH registration by {color.GG}dynap.so{color.N}.
+{color.GG}dynap_exclude.lst {color.N}defines paths to exclude from automatic PATH registration by {color.GG}dynap{color.N}.
 
 Example:
 {color.DG}# comment{color.N}
 $__aresroot__/bin/mymodule
 
 Note:
-    {color.R}- {color.GG}dynap.so {color.N}can expand framework variables such as {color.GG}$__init__ {color.N}and {color.GG}$__bin__{color.N}.
+    {color.R}- {color.GG}dynap {color.N}can expand framework variables such as {color.GG}$__init__ {color.N}and {color.GG}$__bin__{color.N}.
     {color.R}- {color.N}Other Ares components may read this file before those variables are initialized.
     {color.R}- {color.N}Always use {color.GG}$__aresroot__ {color.N}when referencing Ares directories for compatibility.
     {color.R}- {color.N}Variables such as {color.GG}$PREFIX {color.N}and {color.GG}$HOME {color.N}depend on the OS and environment.
