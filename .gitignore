@@ -5,3 +5,4 @@
 .deprecated/
 bin/package/
 data/aresdoc/bin/package/fpack.unf.acon
+bin/text/sloc/

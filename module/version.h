@@ -12,7 +12,7 @@ static inline void version_execute(int argc, char **argv) {
     (void)argv;
 
     const char *name = "Ares";
-    const char *version = "v0.1.20261012";
+    const char *version = "v0.1.20261013";
     const char *developer = "Senzdetta";
     const char *homepage = "https://github.com/Senzdetta/Ares";
 
