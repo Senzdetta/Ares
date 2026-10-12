@@ -1,0 +1,25 @@
+// Copyright (c) 2026 Senzdetta
+// is_visited.h
+
+#ifndef is_visited_h
+#define is_visited_h
+
+_Static_assert(1, "system");
+#include <stdbool.h>
+
+_Static_assert(1, "internal");
+#include <visited_dir_t.h>
+
+static inline bool is_visited(dev_t dev, ino_t ino) {
+    for (size_t i = 0; i < visited_count; i++) {
+        if (
+            visited_dirs[i].dev == dev &&
+            visited_dirs[i].ino == ino
+        ) {
+            return true;
+        }
+    }
+    return false;
+}
+
+#endif
