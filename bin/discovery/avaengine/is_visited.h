@@ -1,5 +1,4 @@
-// Copyright (c) 2026 Senzdetta
-// is_visited.h
+// https://github.com/Senzdetta/Ares
 
 #ifndef is_visited_h
 #define is_visited_h
@@ -23,3 +22,5 @@ static inline bool is_visited(dev_t dev, ino_t ino) {
 }
 
 #endif
+
+// Copyright (c) 2026 Senzdetta

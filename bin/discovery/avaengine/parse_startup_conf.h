@@ -1,5 +1,4 @@
-// Copyright (c) 2026 Senzdetta
-// parse_startup_conf.h
+// https://github.com/Senzdetta/Ares
 
 #ifndef parse_startup_conf_h
 #define parse_startup_conf_h
@@ -76,3 +75,5 @@ static inline bool parse_startup_conf(
 }
 
 #endif
+
+// Copyright (c) 2026 Senzdetta

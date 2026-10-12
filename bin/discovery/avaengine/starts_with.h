@@ -1,5 +1,4 @@
-// Copyright (c) 2026 Senzdetta
-// starts_with.h
+// https://github.com/Senzdetta/Ares
 
 #ifndef starts_with_h
 #define starts_with_h
@@ -20,3 +19,5 @@ static inline bool starts_with(
 }
 
 #endif
+
+// Copyright (c) 2026 Senzdetta

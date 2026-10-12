@@ -1,5 +1,4 @@
-// Copyright (c) 2026 Senzdetta
-// free_registered_engine.h
+// https://github.com/Senzdetta/Ares
 
 #ifndef free_registered_engine_h
 #define free_registered_engine_h
@@ -24,3 +23,5 @@ static inline void free_registered_engine(
 }
 
 #endif
+
+// Copyright (c) 2026 Senzdetta

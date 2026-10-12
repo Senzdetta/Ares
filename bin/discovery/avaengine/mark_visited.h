@@ -1,5 +1,4 @@
-// Copyright (c) 2026 Senzdetta
-// mark_visited.h
+// https://github.com/Senzdetta/Ares
 
 #ifndef mark_visited_h
 #define mark_visited_h
@@ -28,3 +27,5 @@ static inline void mark_visited(dev_t dev, ino_t ino) {
 }
 
 #endif
+
+// Copyright (c) 2026 Senzdetta

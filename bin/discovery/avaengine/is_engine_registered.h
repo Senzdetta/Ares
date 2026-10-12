@@ -1,5 +1,4 @@
-// Copyright (c) 2026 Senzdetta
-// is_engine_registered.h
+// https://github.com/Senzdetta/Ares
 
 #ifndef is_engine_registered_h
 #define is_engine_registered_h
@@ -25,3 +24,5 @@ static inline bool is_engine_registered(
 }
 
 #endif
+
+// Copyright (c) 2026 Senzdetta

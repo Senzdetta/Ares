@@ -1,5 +1,4 @@
-// Copyright (c) 2026 Senzdetta
-// get_clean_path.h
+// https://github.com/Senzdetta/Ares
 
 #ifndef get_clean_path_h
 #define get_clean_path_h
@@ -41,7 +40,6 @@ static inline void get_clean_path(
             }
 
             if (strlen(relative) == 0) {
-                // Kalau pas di root init/engine, tampilkan "engine" atau kosong sesuai kebutuhan
                 snprintf(
                     out_buf,
                     buf_size,
@@ -67,3 +65,5 @@ static inline void get_clean_path(
 }
 
 #endif
+
+// Copyright (c) 2026 Senzdetta

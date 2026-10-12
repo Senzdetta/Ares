@@ -1,5 +1,4 @@
-// Copyright (c) 2026 Senzdetta
-// scandir_execute_engine.h
+// https://github.com/Senzdetta/Ares
 
 #ifndef scandir_execute_engine_h
 #define scandir_execute_engine_h
@@ -118,8 +117,6 @@ static inline bool scandir_execute_engine(
         struct stat ent_st;
         if (stat(full_path, &ent_st) == 0) {
             if (S_ISDIR(ent_st.st_mode)) {
-                // Cek apakah direktori ini adalah leaf engine atau kategori
-                // Untuk engine, kita kumpulkan semua subdirektori atau cek apakah dia engine valid
                 char rel_engine_path[PATH_MAX] = "";
                 if (
                     strlen(real_engine_root) > 0 &&
@@ -134,7 +131,6 @@ static inline bool scandir_execute_engine(
                     snprintf(rel_engine_path, sizeof(rel_engine_path), "%s", p);
                 }
 
-                // Jika di dalam kategori (misal: prompt/yumipr, rel_engine_path punya '/')
                 if (strchr(rel_engine_path, '/') != NULL) {
                     bool registered = is_engine_registered(reg, rel_engine_path);
                     if (!active_only || registered) {
@@ -146,7 +142,6 @@ static inline bool scandir_execute_engine(
                     }
                 }
 
-                // Tetap masukkan ke subdirs untuk rekursif pencarian lebih dalam
                 subdirs = realloc(
                     subdirs,
                     (sub_count + 1) * sizeof(char *)
@@ -181,7 +176,6 @@ static inline bool scandir_execute_engine(
                 engine_entries[i]
             );
 
-            // Cek status aktif/registered untuk styling output jika diperlukan
             char full_entry_path[PATH_MAX];
             snprintf(full_entry_path, sizeof(full_entry_path), "%s/%s", real_path, engine_entries[i]);
             
@@ -250,3 +244,5 @@ static inline bool scandir_execute_engine(
 }
 
 #endif
+
+// Copyright (c) 2026 Senzdetta

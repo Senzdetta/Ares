@@ -1,5 +1,4 @@
-// Copyright (c) 2026 Senzdetta
-// rstrip_slash.h
+// https://github.com/Senzdetta/Ares
 
 #ifndef rstrip_slash_h
 #define rstrip_slash_h
@@ -17,3 +16,5 @@ static inline char *rstrip_slash(char *str) {
 }
 
 #endif
+
+// Copyright (c) 2026 Senzdetta

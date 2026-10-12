@@ -1,5 +1,4 @@
-// Copyright (c) 2026 Senzdetta
-// registered_engine_t.h
+// https://github.com/Senzdetta/Ares
 
 #ifndef registered_engine_t_h
 #define registered_engine_t_h
@@ -14,3 +13,5 @@ typedef struct {
 } registered_engine_t;
 
 #endif
+
+// Copyright (c) 2026 Senzdetta

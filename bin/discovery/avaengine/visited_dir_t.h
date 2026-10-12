@@ -1,5 +1,4 @@
-// Copyright (c) 2026 Senzdetta
-// visited_dir_t.h
+// https://github.com/Senzdetta/Ares
 
 #ifndef visited_dir_t_h
 #define visited_dir_t_h
@@ -18,3 +17,5 @@ extern size_t visited_count;
 extern size_t visited_cap;
 
 #endif
+
+// Copyright (c) 2026 Senzdetta

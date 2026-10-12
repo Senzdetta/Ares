@@ -1,5 +1,4 @@
-// Copyright (c) 2026 Senzdetta
-// strip_slashes.h
+// https://github.com/Senzdetta/Ares
 
 #ifndef strip_slashes_h
 #define strip_slashes_h
@@ -16,3 +15,5 @@ static inline char *strip_slashes(char *str) {
 }
 
 #endif
+
+// Copyright (c) 2026 Senzdetta

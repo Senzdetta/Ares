@@ -1,5 +1,4 @@
-// Copyright (c) 2026 Senzdetta
-// compare_strings.h
+// https://github.com/Senzdetta/Ares
 
 #ifndef compare_strings_h
 #define compare_strings_h
@@ -18,3 +17,5 @@ static inline int compare_strings(
 }
 
 #endif
+
+// Copyright (c) 2026 Senzdetta
