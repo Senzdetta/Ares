@@ -167,5 +167,7 @@
 
 ### 2026-10-13
 ```text
-1. Adding new tool: bin/text/sloc
+1. Adding new tool:
+   - bin/text/sloc (Go)
+   - bin/discovery/avaengine (C)
 ```
