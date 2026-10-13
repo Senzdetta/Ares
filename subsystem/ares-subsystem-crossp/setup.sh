@@ -16,7 +16,6 @@ clang
 gcc::libllvm
 golang::golang-go
 zip
-unrar::unrar-free
 git
 sed
 eza::exa -> eza

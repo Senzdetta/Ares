@@ -10,7 +10,6 @@ gcc::libllvm
 libconfig-dev::libconfig
 golang::golang-go
 zip
-unrar::unrar-free
 git
 sed
 eza::exa -> eza
