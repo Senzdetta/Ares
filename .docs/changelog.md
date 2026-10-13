@@ -164,3 +164,8 @@
    Both have very similar startup times.
    So... I’m now prioritizing ares-subsystem-crossp over ares-subsystem-glibc, only maintaining the glibc version when I feel like it.
 ```
+
+### 2026-10-13
+```text
+1. Adding new tool: bin/text/sloc
+```
