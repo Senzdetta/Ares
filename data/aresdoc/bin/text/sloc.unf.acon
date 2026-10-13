@@ -1,0 +1,2 @@
+Usage:
+    sloc <dir> [--config <config.hcl>] [--exclude <dir, ...>]
