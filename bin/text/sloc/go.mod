@@ -2,7 +2,12 @@ module github.com/Senzdetta/Ares/bin/text/sloc
 
 go 1.27.1
 
-require github.com/hashicorp/hcl/v2 v2.25.0
+require (
+	github.com/Senzdetta/Ares/lib/std/go/color v0.0.0-20261016080732-87f84043996e
+	github.com/Senzdetta/Ares/lib/std/go/invalid_option v0.0.0-20261016080732-87f84043996e
+	github.com/Senzdetta/Ares/lib/std/go/missing_argument v0.0.0-20261016080732-87f84043996e
+	github.com/hashicorp/hcl/v2 v2.25.0
+)
 
 require (
 	github.com/agext/levenshtein v1.2.1 // indirect

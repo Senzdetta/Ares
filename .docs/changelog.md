@@ -173,6 +173,11 @@
 ```
 
 ### 2026-10-14
-```
+```text
 1. Rewriting bin/core/lpatch for new features and broader management scope for llsi.init.
+```
+
+### 2026-10-16
+```text
+1. adding new tool: bin/package/fpack (Go)
 ```

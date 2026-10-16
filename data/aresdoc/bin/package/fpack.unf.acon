@@ -1,0 +1,32 @@
+Usage:
+    fpack --install <package> [--backend <cmd {}>]
+    fpack --uninstall <package> [--backend <cmd {}>]
+    fpack --script <script> --install
+    fpack --script <script> --uninstall
+
+example --install mode:
+    fpack --install 'python3'
+    fpack --install 'python3::python'
+    fpack --install 'python3::python::-'
+    fpack --install 'python3::{python, -}'
+    fpack --install 'python3::python, gcc::libllvm, clang, gawk::awk -> awk, bash'
+    fpack --install '@pip(requests>=2)::@pip3(requests>=2)' --backend 'pip = "pip install {}", pip3 = "pip3 install {}"'
+    fpack --install 'glow::@go(github.com/charmbracelet/glow@latest)' --backend 'go = "go install {}"'
+
+example --script <script> --install mode:
+// comment
+# comment
+
+pip = "pip install {}"
+pip3 = "pip3 install {}"
+go = "go install {}"
+
+python3::python::-
+gcc::libllvm
+readline::{libreadline, libreadline-dev, readline-dev, -}
+exa::eza -> eza
+gawk::awk::- -> awk
+python3-requests::python-requests::@pip(requests>=2::requests::-)::@pip3(requests)::-
+glow::@go(github.com/charmbracelet/glow@latest)::-
+clang
+// etc...
