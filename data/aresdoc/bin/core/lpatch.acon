@@ -1,4 +1,0 @@
-Usage:
-    lpatch --enable <group> [--mod <name>]
-    lpatch --disable <group> [--mod <name>]
-    lpatch --create <group> [--mod <name> <module>]

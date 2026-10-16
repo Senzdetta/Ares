@@ -1,148 +1,141 @@
 // https://github.com/Senzdetta/Ares
 
-_Static_assert(1, "system");
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
 
-_Static_assert(1, "ares");
-#include <color.h>
-#include <missing_argument.h>
+#include <lib/std/c/missing_argument.h>
+#include <lib/std/c/invalid_option.h>
 
-_Static_assert(1, "internal");
-#include <mode.h>
-#include <parse_args.h>
-#include <get_init_paths.h>
-#include <scan_llsi_state.h>
-#include <patch_llsi_file.h>
-
-#define MAX_LINE 4096
-#define PATH_MAX_LEN 2048
+#include <get_target_path.h>
+#include <handle_ls.h>
+#include <handle_scandup.h>
+#include <handle_ctgroup.h>
+#include <handle_ctmod.h>
+#include <handle_rngroup.h>
+#include <handle_rnmod.h>
+#include <handle_toggle.h>
 
 int main(int argc, char *argv[]) {
+    char filepath[512];
+    get_target_path(
+        filepath, sizeof(filepath)
+    );
+
+    if (argc < 2) {
+        missing_argument("lpatch");
+        return 1;
+    }
+
+    if (strcmp(argv[1], "--dupscan") == 0) {
+        return handle_scandup(
+            filepath
+        );
+    }
+
+    if (strcmp(argv[1], "--lsgroup") == 0) {
+        int show_mod = 0;
+        if (
+            argc > 2 &&
+            strcmp(argv[2], "--lsmod") == 0
+        ) {
+            show_mod = 1;
+        }
+
+        handle_ls(
+            filepath, show_mod
+        );
+
+        return 0;
+    }
+
+    if (strcmp(argv[1], "--ctgroup") == 0) {
+        if (argc < 3) {
+            missing_argument("lpatch");
+            return 1;
+        }
+
+        return handle_ctgroup(
+            filepath, argv[2]
+        );
+    }
+
+    if (strcmp(argv[1], "--ctmod") == 0) {
+        if (
+            argc < 6 ||
+            strcmp(argv[4], "--group") != 0
+        ) {
+            missing_argument("lpatch");
+            return 1;
+        }
+
+        return handle_ctmod(
+            filepath,
+            argv[2], argv[3], argv[5]
+        );
+    }
+
+    if (strcmp(argv[1], "--rngroup") == 0) {
+        if (argc < 4) {
+            missing_argument("lpatch");
+            return 1;
+        }
+
+        return handle_rngroup(
+            filepath, argv[2], argv[3]
+        );
+    }
+
+    if (strcmp(argv[1], "--rnmod") == 0) {
+        if (argc < 4) {
+            missing_argument("lpatch");
+            return 1;
+        }
+
+        const char *new_dest = NULL;
+        for (int i = 4; i < argc; i++) {
+            if (
+                strcmp(argv[i], "--llsi") == 0 &&
+                i + 1 < argc
+            ) {
+                new_dest = argv[i + 1];
+                break;
+            }
+        }
+
+        return handle_rnmod(
+            filepath, argv[2], argv[3], new_dest
+        );
+    }
+
+    int enable;
+    if (strcmp(argv[1], "--enable") == 0) {
+        enable = 1;
+    } else if (strcmp(argv[1], "--disable") == 0) {
+        enable = 0;
+    } else {
+        invalid_option(argv[1], "lpatch");
+        return 1;
+    }
+
     if (argc < 3) {
         missing_argument("lpatch");
         return 1;
     }
 
-    Mode mode = MODE_NONE;
-    char *group = NULL;
-    char *mod_name = NULL;
-    char *mod_val = NULL;
-
-    parse_args(
-        argc, argv,
-        &mode, &group, &mod_name, &mod_val
-    );
-
-    if (mode == MODE_NONE || !group) {
-        printf(
-            "%s[!] %sInvalid args!\n",
-            color_R, color_N
-        );
-        return 1;
-    }
-
-    char filename[PATH_MAX_LEN];
-    char tmp_filename[PATH_MAX_LEN];
-    get_init_paths(
-        filename, sizeof(filename),
-        tmp_filename, sizeof(tmp_filename)
-    );
-
-    FILE *f = fopen(filename, "r");
-    if (!f) {
-        printf(
-            "%s[!] %sFailed to open file: %s%s%s\n",
-            color_R, color_N, color_GG, filename, color_N
-        );
-        return 1;
-    }
-
-    int group_found = 0;
-    int mod_found = 0;
-    int state_already_matched = 0;
-
-    char group_header[256];
-    snprintf(
-        group_header, sizeof(group_header),
-        "%s {", group
-    );
-
-    scan_llsi_state(
-        f, mode, group, group_header, mod_name,
-        &group_found, &mod_found, &state_already_matched,
-        MAX_LINE
-    );
-    fclose(f);
-
-    if (mode == MODE_CREATE) {
-        if (group_found) {
-            printf(
-                "%s[!] %sGroup: %s%s %sis already exist!\n",
-                color_R, color_N, color_GG, group, color_N
-            );
-            return 1;
-        }
-    } else {
-        if (!group_found) {
-            printf(
-                "%s[!] %sGroup: %s%s %snot found!\n",
-                color_R, color_N, color_GG, group, color_N
-            );
-            return 1;
-        }
-
-        if (mod_name && !mod_found) {
-            printf(
-                "%s[!] %sModule: %s%s %snot found in group %s%s%s\n",
-                color_R, color_N, color_GG, mod_name, color_N,
-                color_GG, group, color_N
-            );
-            return 1;
-        }
-
-        if (mod_name && state_already_matched) {
-            printf(
-                "%s[!] %sModule: %s%s %sis already %s%s%s\n",
-                color_R, color_N, color_GG, mod_name, color_N,
-                color_GG, (
-                    mode == MODE_DISABLE ?
-                    "disabled" :
-                    "enabled"
-                ),
-                color_N
-            );
-            return 1;
+    const char *mod = NULL;
+    for (int i = 3; i < argc; i++) {
+        if (
+            strcmp(argv[i], "--mod") == 0 &&
+            i + 1 < argc
+        ) {
+            mod = argv[i + 1];
+            break;
         }
     }
 
-    f = fopen(filename, "r");
-    FILE *tmp = fopen(tmp_filename, "w");
-    if (!f || !tmp) {
-        perror("failed to processing temporary file!");
-        if (f) fclose(f);
-        if (tmp) fclose(tmp);
-        return 1;
-    }
-
-    patch_llsi_file(
-        f, tmp, mode, group, group_header,
-        mod_name, mod_val, MAX_LINE
+    return handle_toggle(
+        filepath, enable, argv[2], mod
     );
-
-    fclose(f);
-    fclose(tmp);
-
-    remove(filename);
-    rename(tmp_filename, filename);
-
-    printf(
-        "%s[+] %sPatched: %s%s%s\n",
-        color_GG, color_N, color_GG, filename, color_N
-    );
-
-    return 0;
 }
 
 // Copyright (c) 2026 Senzdetta

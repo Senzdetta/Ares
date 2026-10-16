@@ -1,0 +1,9 @@
+Usage:
+    lpatch --dupscan
+    lpatch --lsgroup [--lsmod]
+    lpatch --disable <group> [--mod <module>]
+    lpatch --enable <group> [--mod <module>]
+    lpatch --ctgroup <group>
+    lpatch --ctmod <mod> <llsi> --group <group>
+    lpatch --rngroup <group> <newgroup>
+    lpatch --rnmod <module> <newmodule> [--llsi <llsi>]

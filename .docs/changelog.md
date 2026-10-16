@@ -171,3 +171,8 @@
    - bin/text/sloc (Go)
    - bin/discovery/avaengine (C)
 ```
+
+### 2026-10-14
+```
+1. Rewriting bin/core/lpatch for new features and broader management scope for llsi.init.
+```

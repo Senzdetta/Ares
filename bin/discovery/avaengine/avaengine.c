@@ -19,7 +19,7 @@ int main(int argc, char *argv[]) {
     if (!aresroot || strlen(aresroot) == 0) {
         fprintf(
             stderr,
-            "%s[!] %sVariable: %s__aresroot__ %sis not set!\n",
+            "%s[!] %sVariable: %s__aresroot__ %snot found!\n",
             color_R, color_N, color_GG, color_N
         );
         return 1;
